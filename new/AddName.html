@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="https://blogger.googleusercontent.com/img/a/AVvXsEhcfsQtlr7F0veFGVdWkGJCPQRWq8eTolEQBGnCCQRVJzk30Vpo1eI-5OK6w15clPtb5aGOMtVGpLp1QGXTN4tH5hrws4y6NAAtYUeSLl2nuNqGMvH6ydDrY4-AzIpdEbsdJ5SJEtBRDHlzM98ZTn00770rAgmXIH3Z7oMzR08UdxtTuKsPLsAU7r5EHEib=w92-h92" type="image/x-icon">
+    <title>Readme Generator</title>
+    <style>
+    .login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(24, 20, 20, 0.987);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+.login-boxm {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    width: 433px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    /* background: rgba(24, 20, 20, 0.987); */
+    box-sizing: border-box;
+    /* box-shadow: 0 15px 25px rgba(0,0,0,.6); */
+    border-radius: 10px;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #bdb8b8;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background: #03f40f;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03f40f,
+              0 0 25px #03f40f,
+              0 0 50px #03f40f,
+              0 0 100px #03f40f;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(1) {
+  bottom: 2px;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03f40f);
+  animation: btn-anim1 2s linear infinite;
+}
+  /* *{
+    background-color: #03f40f;
+  }    */
+      
+        .card__form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+       
+    </style>
+    <style>
+        /* Styles for desktop */
+      
+    
+        /* Styles for mobile */
+        @media only screen and (max-width: 600px) {
+            .login-box {
+                width: 300px;
+                padding: 20px;
+            }
+    
+            /* Additional mobile styles for login box or its elements */
+        }
+    
+        /* Styles for tablet */
+        @media only screen and (min-width: 601px) and (max-width: 1024px) {
+            .login-box {
+                width: 400px;
+                padding: 30px;
+            }
+    
+            /* Additional tablet styles for login box or its elements */
+        }
+    </style>
+    <style>
+.navbar {
+  background-color: #f8f8f8;
+  padding: 10px;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+/* 
+ul{
+    float: left;
+} */
+
+.navbar-brand a {
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.navbar-toggle-label {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-toggle-label span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin-bottom: 5px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-menu li {
+  margin-right: 10px;
+}
+
+.navbar-menu li a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px;
+}
+
+    </style>
+</head>
+<header>
+  <nav class="navbar">
+      <div class="navbar-brand">
+        <a href="index.html">Readme Generator</a>
+      </div>
+     
+      <ul class="navbar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Other Projects</a></li>
+        <li><a href="https://monusingh.netlify.app/">Hire Me</a></li>
+        <li><a id="user" href="">User</a></li>
+        <!-- <li><a href="#">Contact</a></li> -->
+      </ul>
+    </nav>
+    
+</header>
+<body>
+    <div class="login-boxm"> <h1>Best Readme Generator</h1></div>
+ 
+    <div class="login-box">
+        <form class="card__form">
+          <div class="user-box">
+            <input id="myInput" type="text" name="" required="">
+            <label>Enter Your Name</label>
+          </div>
+         <center>
+          <a onclick="next()" href="">
+                 Next
+             <span></span>
+          </a></center>
+        </form>
+      </div>
+    <script>
+   var authM =localStorage.getItem("Auth");
+      if(authM==null || authM=="" || authM!="Monu Singh"){
+        window.location.href = "LogIn.html";
+      }
+
+      var UserLog = localStorage.getItem("user");
+     var Logout = document.getElementById("user");
+     Logout.textContent=UserLog;
+   Logout.addEventListener("click",function(){
+    localStorage.clear();
+   })
+
+        const input = document.getElementById("myInput");
+        const submitButton = document.querySelector(".sign-up");
+
+         function next() {
+            event.preventDefault();
+            localStorage.setItem("name", input.value);
+            window.location.href = "addGif.html"; // Redirect to the next page
+          
+        };
+
+        
+    </script>
+  
+</body>
+</html>

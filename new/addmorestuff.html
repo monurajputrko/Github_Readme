@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="https://blogger.googleusercontent.com/img/a/AVvXsEhcfsQtlr7F0veFGVdWkGJCPQRWq8eTolEQBGnCCQRVJzk30Vpo1eI-5OK6w15clPtb5aGOMtVGpLp1QGXTN4tH5hrws4y6NAAtYUeSLl2nuNqGMvH6ydDrY4-AzIpdEbsdJ5SJEtBRDHlzM98ZTn00770rAgmXIH3Z7oMzR08UdxtTuKsPLsAU7r5EHEib=w92-h92" type="image/x-icon">
+    <title>Image Change Example</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 100vh; */
+            background-color: white;
+        }
+
+        #parent{
+             display: grid;
+             grid-template-columns: repeat(1,1fr);
+        }
+        #parent>div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        button{
+           border: 2px solid black;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        select {
+            padding: 8px;
+            border: 1px solid white;
+            border-radius: 4px;
+            width: 200px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+        
+        #bott{
+            margin: 2%;
+        }
+
+
+/* CSS */
+.button-6 {
+  align-items: center;
+  background-color: #000000;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-6:hover,
+.button-6:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.button-6:hover {
+  transform: translateY(-1px);
+}
+
+.button-6:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+#checkBox {
+  background-color: white;
+  /* Add other checkbox styles */
+}
+
+#checkBoxLabel {
+  color: #333;
+  /* Add other label styles */
+}
+input[type="checkbox"]::before {
+  /* ...existing styles */
+
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+/* Check Box---------------------------------------------------------------------------- */
+:root {
+  --form-control-color: rebeccapurple;
+  --form-control-disabled: #959495;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+form {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.form-control {
+  font-family: system-ui, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+
+.form-control + .form-control {
+  margin-top: 1em;
+}
+
+.form-control--disabled {
+  color: var(--form-control-disabled);
+  cursor: not-allowed;
+}
+
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  background-color: var(--form-background);
+  /* Not removed via appearance */
+  margin: 0;
+
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+/* 
+input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
+} */
+
+input[type="checkbox"]:disabled {
+  --form-control-color: var(--form-control-disabled);
+
+  color: var(--form-control-disabled);
+  cursor: not-allowed;
+}
+
+/* Drop Down --------------------------------------------- */
+
+/* Dropdown styles */
+
+.dropdown {
+  max-width: 13em;
+  margin: 80px auto 0;
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-btn {
+  background: #1d1f24;
+  font-size: 18px;
+  width: 100%;
+  border: none;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7em 0.5em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.arrow {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #fff;
+  transition: transform ease-in-out 0.3s;
+}
+
+.dropdown-content {
+  list-style: none;
+  position: absolute;
+  top: 3.2em;
+  width: 100%;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.dropdown-content li {
+  background: #2f3238;
+  border-radius: 0.5em;
+  position: relative;
+  left: 100%;
+  transition: 0.5s;
+  transition-delay: calc(60ms * var(--delay));
+}
+
+.dropdown-btn:focus + .dropdown-content li {
+  left: 0;
+}
+
+.dropdown-btn:focus + .dropdown-content {
+  visibility: visible;
+}
+
+.dropdown-btn:focus > .arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-content li:hover {
+  background: #1d1f24;
+}
+
+.dropdown-content li a {
+  display: block;
+  padding: 0.7em 0.5em;
+  color: #fff;
+  margin: 0.1em 0;
+  text-decoration: none;
+}
+hr{
+    color: #1d1f24;
+}
+#login-box {
+ 
+ width: 600px;
+ padding: 40px;
+ margin: 5%;
+ /* transform: translate(-50%, -50%); */
+ background: rgba(24, 20, 20, 0.987);
+ box-sizing: border-box;
+ box-shadow: 0 15px 25px rgba(0,0,0,.6);
+ border-radius: 10px;
+}
+    </style>
+</head>
+<body>
+  
+    <div id="parent">
+    <div>
+    <h1>Show Your GitHub Stats</h1>
+</div>
+<div>
+    <label class="form-control">
+        <input type="checkbox" name="checkbox" id="checkBox" />
+        Add Trophys
+      </label>
+</div>
+<div>
+    <!-- <label for="myDropdown">Choose an option:</label>
+    <br><br> -->
+    <select class="dropdown-btn" id="myDropdown" onchange="changeImage()">
+        <option value="Default">Flat</option>
+        <option value="Radical">One Dark</option>
+        <option value="option3">Gruv Box</option>
+        <option value="option4">Dracula</option>
+        <option value="option5">Monokai</option>
+        <option value="option6">Chalk</option>
+        <option value="option7">Nord</option>
+        <option value="option8">Alduin</option>
+        <option value="option9">Dark Hub</option>
+        <option value="option10">Juice Fresh</option>
+        <option value="option11">Buddhism</option>
+        <option value="option12">Oldie</option>
+        <option value="option13">Radical</option>
+        <option value="option14">One Star</option>
+        <option value="option15">Discord</option>
+        <option value="option16">Algolia</option>
+        <option value="option17">Gitdimmed</option>
+        <option value="option18">Tokyo Night</option>
+        <option value="option19">Matrix</option>
+        <option value="option20">Apprentise</option>
+        <option value="option21">Dark</option>
+        
+    </select>
+</div>
+
+    <br>
+    <div id="login-box">
+    <img id="myImage" src="https://github-profile-trophy.vercel.app/?username=monurajputrko&theme=flat&no-frame=false&no-bg=true&margin-w=4">
+</div> 
+<hr>
+<div>
+    <label class="form-control">
+        <input type="checkbox" name="checkbox" id="check" />
+        Add Profile Visitors
+      </label>
+</div>
+<div>
+    <!-- <label for="myDropdown">Choose an option:</label>
+    <br><br> -->
+    <select class="dropdown-btn" id="myDropdownvisico" onchange="changecolor()">
+        <option value="option1">Cyan</option>
+        <option value="option2">Blue</option>
+        <option value="option3">Amber</option>
+        <option value="option4">Green</option>
+        <option value="option5">Red</option>
+        <option value="option6">Rose</option>
+        <option value="option13">Orange</option>
+        <option value="option7">Indigo</option>
+        <option value="option8">Emrald</option>
+        <option value="option9">Teal</option>
+        <option value="option10">pink</option>
+        <option value="option11">phusia</option>
+        <option value="option12">Neautral</option>
+        
+    </select>
+    <!-- <select class="dropdown-btn" id="myDropdownvisisty" onchange="changeImage()">
+        <option value="Default">Default</option>
+        <option value="Radical">Bar</option>
+        <option value="option3">Code</option>
+        <option value="option4">Cursor</option>
+        <option value="option5">Emoji</option>
+        <option value="option6">Eye</option>
+        <option value="option7">Fire</option>
+        <option value="option8">Heart</option>
+        <option value="option9">Bolt</option>
+        <option value="option10">Star</option>
+        
+    </select> -->
+</div>
+<br>
+<div id="login-box">
+<img id="myImagevis" src="">
+</div> 
+<div>
+    <button class="button-6" id="submitButton">Next</button>
+    <!-- <button class="button-6" role="button">Button 6</button> -->
+</div>
+<br>
+<div>
+    <a id="bott" target="_blank" href="https://www.linkedin.com/in/monurajputrko/"><img  src="https://img.shields.io/badge/LinkedIn-0A66C2.svg?style=for-the-badge&logo=LinkedIn&logoColor=white" alt=""></a>
+    <a id="bott" target="_blank" href="https://github.com/monurajputrko"><img  src="https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white" alt=""></a>
+    <a id="bott" target="_blank" href="https://monusingh.netlify.app/"><img  src="https://img.shields.io/badge/About.me-00A98F.svg?style=for-the-badge&logo=aboutdotme&logoColor=white" alt=""></a>
+</div>
+</div>
+<a href="temp.html"><button>Next</button></a>
+    <script>
+  var authM =localStorage.getItem("Auth");
+      if(authM==null || authM=="" || authM!="Monu Singh"){
+        window.location.href = "LogIn.html";
+      }
+
+
+var checkBox = document.getElementById("checkBox");
+    var mark;
+checkBox.addEventListener("change", function() {
+  if (checkBox.checked) {
+    mark="true";
+    changeImage() 
+  } else {
+    mark="false";
+    changeImage() 
+  }
+});
+
+var check = document.getElementById("check");
+    var private;
+check.addEventListener("change", function() {
+  if (check.checked) {
+    private="true";
+    changeImage() 
+    pri()
+  } else {
+    private="false";
+    changeImage() 
+    pri()
+  }
+});
+        const submitButton = document.getElementById("submitButton");
+
+        submitButton.addEventListener("click", function() {
+            window.location.href = "Social-links.html"; // Redirect to the next page
+        });
+        // Retrieve the value from local storage
+const storedValue = localStorage.getItem("username");
+
+// // Check if the value exists
+// if (storedValue) {
+//     // Use the value as needed
+// } else {
+//     // Value doesn't exist in local storage
+//    alert("Please Enter USERNAME");
+//    window.location.href = "index.html"; // Redirect to the next page
+// }
+
+            var dropdowncolor = document.getElementById("myDropdownvisico");
+            var dropdownstyle = document.getElementById("myDropdownvisisty");
+            var dropdown = document.getElementById("myDropdown");
+            var imagetro = document.getElementById("myImage");
+            var imagevis = document.getElementById("myImagevis");
+            imagevis.src= `https://visitcount.itsvg.in/api/test?icon=4&color=0`;
+            var colorcode=0;
+               
+let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=flat&no-frame=false&no-bg=true&margin-w=4`;
+            
+imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=flat&no-frame=false&no-bg=true&margin-w=4`;
+               
+
+function pri(){
+    if(private==="true"){
+            localStorage.setItem("imagestatvisi",  imagevis.src);
+    }else{
+        localStorage.removeItem("imagestatvisi");
+    }
+}
+
+window.onload = function() {
+    changecolor();
+
+    if(mark==="true"){
+            localStorage.setItem("imagestattrop", imagestattrop);
+    }else{
+        localStorage.removeItem("imagestattrop");
+    }
+
+        };
+        // imagevis.src= ``;
+        // colorcode=0;
+        function changecolor() {
+            event.preventDefault();
+            if (dropdowncolor.value === "option1") {
+              colorcode=0;
+              imagevis.src= `https://visitcount.itsvg.in/api/test?icon=4&color=0`;
+               localStorage.setItem("imagestatvisi",  imagevis.src);
+            //    location.reload();
+            } else if (dropdowncolor.value === "option2") {
+                colorcode=1;
+                 imagevis.src= `https://visitcount.itsvg.in/api/test?icon=4&color=1`;
+                  localStorage.setItem("imagestatvisi",  imagevis.src);
+                //  location.reload();
+            } else if (dropdowncolor.value === "option3") {
+                colorcode=2;
+                 imagevis.src= `https://visitcount.itsvg.in/api/test?icon=4&color=2`;
+                  localStorage.setItem("imagestatvisi",  imagevis.src);
+                //  location.reload();
+            } else if (dropdowncolor.value === "option4") {
+                colorcode=3;
+                 imagevis.src= `https://visitcount.itsvg.in/api/test?icon=4&color=3`;
+                  localStorage.setItem("imagestatvisi", imagevis.src);
+                //  location.reload();
+            } else if (dropdowncolor.value === "option5") {
+                colorcode=4;
+                 imagevis.src= `https://visitcount.itsvg.in/api/test?icon=4&color=4`;
+                  localStorage.setItem("imagestatvisi", imagevis.src);
+                //  location.reload();
+            } else if (dropdowncolor.value === "option6") {
+                colorcode=5;
+                 imagevis.src= `https://visitcount.itsvg.in/api/test?icon=4&color=5`;
+                  localStorage.setItem("imagestatvisi",  imagevis.src);
+                //  location.reload();
+            } else if (dropdowncolor.value === "option7") {
+                colorcode=6;
+                 imagevis.src= `https://visitcount.itsvg.in/api/test?icon=4&color=6`;
+                  localStorage.setItem("imagestatvisi", imagevis.src);
+                //  location.reload();
+            } else if (dropdowncolor.value === "option8") {
+                colorcode=4;
+                 imagevis.src= `https://visitcount.itsvg.in/api/test?icon=4&color=7`;
+                  localStorage.setItem("imagestatvisi",imagevis.src);
+                //  location.reload();
+            } else if (dropdowncolor.value === "option9") {
+                colorcode=5;
+                 imagevis.src= `https://visitcount.itsvg.in/api/test?icon=4&color=8`;
+                  localStorage.setItem("imagestatvisi", imagevis.src);
+                //  location.reload();
+            } else if (dropdowncolor.value === "option10") {
+                colorcode=6;
+                 imagevis.src= `https://visitcount.itsvg.in/api/test?icon=4&color=9`;
+                  localStorage.setItem("imagestatvisi",  imagevis.src);
+                //  location.reload();
+            }
+        }
+ 
+
+        function changeImage() {
+
+        if(mark==="true"){
+          
+            if (dropdown.value === "Default") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=flat&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=flat&no-frame=false&no-bg=true&margin-w=4`;
+               
+            localStorage.setItem("imagestattrop", imagestattrop);
+            } else if (dropdown.value === "Radical") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=onedark&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=onedark&no-frame=false&no-bg=true&margin-w=4`;
+                
+            localStorage.setItem("imagestattrop", imagestattrop);
+            } else if (dropdown.value === "option3") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=gruvbox&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=gruvbox&no-frame=false&no-bg=true&margin-w=4`;
+            
+            localStorage.setItem("imagestattrop", imagestattrop);
+            }else if (dropdown.value === "option4") {
+               
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=dracula&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=dracula&no-frame=false&no-bg=true&margin-w=4`;
+            
+            localStorage.setItem("imagestattrop", imagestattrop);
+            }else if (dropdown.value === "option5") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=monokai&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=monokai&no-frame=false&no-bg=true&margin-w=4`;
+            localStorage.setItem("imagestattrop", imagestattrop);
+            }else if (dropdown.value === "option6") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=chalk&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=chalk&no-frame=false&no-bg=true&margin-w=4`;
+            localStorage.setItem("imagestattrop", imagestattrop);
+            }else if (dropdown.value === "option7") {
+              
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=nord&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=nord&no-frame=false&no-bg=true&margin-w=4`;
+            localStorage.setItem("imagestattrop", imagestattrop);
+            }else if (dropdown.value === "option8") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=alduin&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=alduin&no-frame=false&no-bg=true&margin-w=4`;
+            localStorage.setItem("imagestattrop", imagestattrop);
+                
+            }else if (dropdown.value === "option9") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=darkhub&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=darkhub&no-frame=false&no-bg=true&margin-w=4`;
+            localStorage.setItem("imagestattrop", imagestattrop);
+            }else if (dropdown.value === "option10") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=juicyfresh&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=juicyfresh&no-frame=false&no-bg=true&margin-w=4`;
+            localStorage.setItem("imagestattrop", imagestattrop);
+              
+            }else if (dropdown.value === "option11") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=buddhism&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=buddhism&no-frame=false&no-bg=true&margin-w=4`;
+            localStorage.setItem("imagestattrop", imagestattrop);
+               
+            }else if (dropdown.value === "option12") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=oldie&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=oldie&no-frame=false&no-bg=true&margin-w=4`;
+            localStorage.setItem("imagestattrop", imagestattrop);
+               
+            }else if (dropdown.value === "option13") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=radical&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=radical&no-frame=false&no-bg=true&margin-w=4`;
+            localStorage.setItem("imagestattrop", imagestattrop);
+            }else if (dropdown.value === "option14") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=onestar&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=onestar&no-frame=false&no-bg=true&margin-w=4`;
+            localStorage.setItem("imagestattrop", imagestattrop);
+            }else if (dropdown.value === "option15") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=discord&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=discord&no-frame=false&no-bg=true&margin-w=4`;
+            localStorage.setItem("imagestattrop", imagestattrop);
+              
+            }else if (dropdown.value === "option16") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=discord&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=discord&no-frame=false&no-bg=true&margin-w=4`;
+            localStorage.setItem("imagestattrop", imagestattrop);
+                
+            }else if (dropdown.value === "option17") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=gitdimmed&no-frame=false&no-bg=true&margin-w=4`;
+            
+imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=gitdimmed&no-frame=false&no-bg=true&margin-w=4`;
+            localStorage.setItem("imagestattrop", imagestattrop);
+            }else if (dropdown.value === "option18") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=tokyonight&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=tokyonight&no-frame=false&no-bg=true&margin-w=4`;
+            localStorage.setItem("imagestattrop", imagestattrop);
+               
+            }else if (dropdown.value === "option19") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=matrix&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=matrix&no-frame=false&no-bg=true&margin-w=4`;
+            localStorage.setItem("imagestattrop", imagestattrop);
+            }else if (dropdown.value === "option20") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=apprentice&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=apprentice&no-frame=false&no-bg=true&margin-w=4`;
+            
+            localStorage.setItem("imagestattrop", imagestattrop);
+            }else if (dropdown.value === "option21") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=dark_dimmed&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=dark_dimmed&no-frame=false&no-bg=true&margin-w=4`;
+             
+            localStorage.setItem("imagestattrop", imagestattrop);
+            }
+        }else{
+        localStorage.removeItem("imagestattrop");
+
+        if (dropdown.value === "Default") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=flat&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=flat&no-frame=false&no-bg=true&margin-w=4`;
+               
+        
+            } else if (dropdown.value === "Radical") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=onedark&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=onedark&no-frame=false&no-bg=true&margin-w=4`;
+                
+        
+            } else if (dropdown.value === "option3") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=gruvbox&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=gruvbox&no-frame=false&no-bg=true&margin-w=4`;
+            
+        
+            }else if (dropdown.value === "option4") {
+               
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=dracula&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=dracula&no-frame=false&no-bg=true&margin-w=4`;
+            
+        
+            }else if (dropdown.value === "option5") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=monokai&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=monokai&no-frame=false&no-bg=true&margin-w=4`;
+        
+            }else if (dropdown.value === "option6") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=chalk&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=chalk&no-frame=false&no-bg=true&margin-w=4`;
+        
+            }else if (dropdown.value === "option7") {
+              
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=nord&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=nord&no-frame=false&no-bg=true&margin-w=4`;
+        
+            }else if (dropdown.value === "option8") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=alduin&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=alduin&no-frame=false&no-bg=true&margin-w=4`;
+        
+                
+            }else if (dropdown.value === "option9") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=darkhub&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=darkhub&no-frame=false&no-bg=true&margin-w=4`;
+        
+            }else if (dropdown.value === "option10") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=juicyfresh&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=juicyfresh&no-frame=false&no-bg=true&margin-w=4`;
+        
+              
+            }else if (dropdown.value === "option11") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=buddhism&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=buddhism&no-frame=false&no-bg=true&margin-w=4`;
+        
+               
+            }else if (dropdown.value === "option12") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=oldie&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=oldie&no-frame=false&no-bg=true&margin-w=4`;
+        
+               
+            }else if (dropdown.value === "option13") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=radical&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=radical&no-frame=false&no-bg=true&margin-w=4`;
+        
+            }else if (dropdown.value === "option14") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=onestar&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=onestar&no-frame=false&no-bg=true&margin-w=4`;
+        
+            }else if (dropdown.value === "option15") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=discord&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=discord&no-frame=false&no-bg=true&margin-w=4`;
+        
+              
+            }else if (dropdown.value === "option16") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=discord&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=discord&no-frame=false&no-bg=true&margin-w=4`;
+        
+                
+            }else if (dropdown.value === "option17") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=gitdimmed&no-frame=false&no-bg=true&margin-w=4`;
+            
+imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=gitdimmed&no-frame=false&no-bg=true&margin-w=4`;
+        
+            }else if (dropdown.value === "option18") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=tokyonight&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=tokyonight&no-frame=false&no-bg=true&margin-w=4`;
+        
+               
+            }else if (dropdown.value === "option19") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=matrix&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=matrix&no-frame=false&no-bg=true&margin-w=4`;
+        
+            }else if (dropdown.value === "option20") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=apprentice&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=apprentice&no-frame=false&no-bg=true&margin-w=4`;
+            
+        
+            }else if (dropdown.value === "option21") {
+                let imagestattrop =`https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=dark_dimmed&no-frame=false&no-bg=true&margin-w=4`;
+            
+            imagetro.src = `https://github-profile-trophy.vercel.app/?username=${storedValue}&theme=dark_dimmed&no-frame=false&no-bg=true&margin-w=4`;
+             
+        
+            }
+    }
+    }
+    </script>
+</body>
+</html>

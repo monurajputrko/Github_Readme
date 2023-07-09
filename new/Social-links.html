@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://blogger.googleusercontent.com/img/a/AVvXsEhcfsQtlr7F0veFGVdWkGJCPQRWq8eTolEQBGnCCQRVJzk30Vpo1eI-5OK6w15clPtb5aGOMtVGpLp1QGXTN4tH5hrws4y6NAAtYUeSLl2nuNqGMvH6ydDrY4-AzIpdEbsdJ5SJEtBRDHlzM98ZTn00770rAgmXIH3Z7oMzR08UdxtTuKsPLsAU7r5EHEib=w92-h92" type="image/x-icon">
+    <title>Add Social Media Links</title>
+    <link rel="shortcut icon" href="https://blogger.googleusercontent.com/img/a/AVvXsEhcfsQtlr7F0veFGVdWkGJCPQRWq8eTolEQBGnCCQRVJzk30Vpo1eI-5OK6w15clPtb5aGOMtVGpLp1QGXTN4tH5hrws4y6NAAtYUeSLl2nuNqGMvH6ydDrY4-AzIpdEbsdJ5SJEtBRDHlzM98ZTn00770rAgmXIH3Z7oMzR08UdxtTuKsPLsAU7r5EHEib=w92-h92" type="image/x-icon">
+    <style>
+      /* *{
+        background: #bbf7d0;
+      } */
+        .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ffffff;
+}
+
+.singup {
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  font-weight: bold;
+  font-size: x-large;
+  margin-top: 1.5em;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+  width: 300px;
+  flex-direction: column;
+  gap: 35px;
+  border-radius: 15px;
+  background: #ffffff;
+  /* box-shadow: 16px 16px 32px #c8c8c8, -16px -16px 32px #fefefe; */
+  border-radius: 8px;
+}
+
+.inputBox,
+.inputBox1 {
+  position: relative;
+  width: 250px;
+}
+
+.inputBox input,
+.inputBox1 input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1em;
+  background: transparent;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  transition: 0.1s;
+  border-bottom-left-radius: 8px;
+}
+
+.inputBox span,
+.inputBox1 span {
+  margin-top: 5px;
+  position: absolute;
+  left: 0;
+  transform: translateY(-4px);
+  margin-left: 10px;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 3px;
+  border-radius: 8px;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+  transform: translateX(113px) translateY(-15px);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  background: #ffffff;
+  letter-spacing: 0.2em;
+  color: #000000;
+  border: 2px;
+}
+
+.inputBox1 input:valid~span,
+.inputBox1 input:focus~span {
+  transform: translateX(156px) translateY(-15px);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  color: #000;
+  background: #ffffff;
+  letter-spacing: 0.2em;
+  color: #000000;
+  border: 2px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus,
+.inputBox1 input:valid,
+.inputBox1 input:focus {
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+}
+
+.enter {
+  height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: transparent;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 3em;
+}
+
+.enter:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+    </style>
+     <style>
+      .navbar {
+        background-color: #f8f8f8;
+        padding: 10px;
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+      }
+      /* 
+      ul{
+          float: left;
+      } */
+      
+      .navbar-brand a {
+        font-weight: bold;
+        color: #333;
+        text-decoration: none;
+      }
+      
+      .navbar-toggle-label {
+        display: none;
+        cursor: pointer;
+      }
+      
+      .navbar-toggle-label span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin-bottom: 5px;
+      }
+      
+      .navbar-menu {
+        list-style: none;
+        display: flex;
+      }
+      
+      .navbar-menu li {
+        margin-right: 10px;
+      }
+      
+      .navbar-menu li a {
+        color: #333;
+        text-decoration: none;
+        padding: 5px;
+      }
+      
+      #login-box {
+ 
+ width: 600px;
+ padding: 40px;
+ margin: 5%;
+ /* transform: translate(-50%, -50%); */
+ background: rgba(24, 20, 20, 0.987);
+ box-sizing: border-box;
+ box-shadow: 0 15px 25px rgba(0,0,0,.6);
+ border-radius: 10px;
+}
+          </style>
+</head>
+<header>
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a href="#">Logo</a>
+    </div>
+   
+    <ul class="navbar-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Other Projects</a></li>
+      <li><a href="https://monusingh.netlify.app/">Hire Me</a></li>
+      <!-- <li><a href="#">Contact</a></li> -->
+    </ul>
+  </nav>
+</header>
+<body>
+    <div  class="container">
+        <div id="login-box" class="card">
+            <a class="singup" style="color: #ffffff;">Add Social Media</a>
+            <div class="inputBox1">
+                <input id="linkedin" type="text" required="required">
+                <span class="user">Linkedin</span>
+            </div>
+
+            <div class="inputBox">
+                <input id="Portfolio" type="text" required="required">
+                <span>Portfolio</span>
+            </div>
+
+            <div class="inputBox">
+                <input id="instagram" type="text" required="required">
+                <span>Instagram</span>
+            </div>
+          
+            <div class="inputBox1">
+                <input id="Codepen" type="text" required="required">
+                <span class="user">Codepen</span>
+            </div>
+
+            <div class="inputBox">
+                <input id="facebok" type="text" required="required">
+                <span>Facebook</span>
+            </div>
+
+            <div class="inputBox">
+                <input id="twitter" type="text" required="required">
+                <span>Twitter</span>
+            </div>
+            
+
+            <button class="enter" onclick="next()">Next</button>
+
+        </div>
+    </div>
+</body>
+</html>
+<script>
+  var authM =localStorage.getItem("Auth");
+      if(authM==null || authM=="" || authM!="Monu Singh"){
+        window.location.href = "LogIn.html";
+      }
+
+      var UserLog = localStorage.getItem("user");
+     var Logout = document.getElementById("user");
+     Logout.textContent=UserLog;
+   Logout.addEventListener("click",function(){
+    localStorage.clear();
+   })
+
+
+    function next(){
+    
+let linkedin = document.getElementById("linkedin").value;
+let Portfolio = document.getElementById("Portfolio").value;
+let instagram = document.getElementById("instagram").value;
+let Codepen = document.getElementById("Codepen").value;
+let facebok = document.getElementById("facebok").value;
+let twitter = document.getElementById("twitter").value;
+
+console.log(twitter);
+
+localStorage.setItem('linkedin', JSON.stringify(linkedin));
+localStorage.setItem('Portfolio', JSON.stringify(Portfolio));
+localStorage.setItem('instagram', JSON.stringify(instagram));
+localStorage.setItem('Codepen', JSON.stringify(Codepen));
+localStorage.setItem('facebok', JSON.stringify(facebok));
+  localStorage.setItem('twitter', JSON.stringify(twitter));
+        window.location.href = "skills.html";
+    }
+
+
+</script>

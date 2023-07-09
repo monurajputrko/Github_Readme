@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://blogger.googleusercontent.com/img/a/AVvXsEhcfsQtlr7F0veFGVdWkGJCPQRWq8eTolEQBGnCCQRVJzk30Vpo1eI-5OK6w15clPtb5aGOMtVGpLp1QGXTN4tH5hrws4y6NAAtYUeSLl2nuNqGMvH6ydDrY4-AzIpdEbsdJ5SJEtBRDHlzM98ZTn00770rAgmXIH3Z7oMzR08UdxtTuKsPLsAU7r5EHEib=w92-h92" type="image/x-icon">
+    <title>Create Exiting GitHub Readme</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <style>
+      /* Define the click effect styles */
+img {
+  transform: scale(0.9); /* Scale down the image on click */
+  transition: transform 0.2s ease-in-out; /* Add a smooth transition */
+}
+
+/* Define the active state of the image */
+img:active {
+  transform: scale(1); /* Restore the original size on click */
+}
+
+      textarea {
+  width: 100%;
+  height: 250px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+.enter-container {
+    display: flex;
+    justify-content: center;
+  }
+.enter {
+  height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 3em;
+}
+
+.enter:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+#popup {
+            position: fixed;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            display: none;
+        }
+      img{
+        margin: 20px;
+        height: 7vh;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+        body{
+            margin: 0px 20px 0px 20px;
+            background: #ffffff;
+        }
+        #Navbar{
+            display: flex;
+            flex-direction: column;
+            /* align-items: start;
+            justify-content: space-between; */
+             /* float: right; */
+        }
+        #login-box {
+        
+ /* transform: translate(-50%, -50%); */
+ background: rgba(255, 255, 255, 0.987);
+ box-sizing: border-box;
+ /* box-shadow: 0 15px 25px rgba(0,0,0,.6); */
+ border-radius: 10px;
+}
+
+h1{
+  color: #fff;
+}
+    </style>
+</head>
+<body>
+  <div id="popup">
+    <h2>Skill Already Present </h2>
+</div>
+
+<form class="row g-3" >
+   
+    
+    <div id="login-box" width="100%">
+      <h1><strong>LANGUAGES</strong></h1>
+      <img id="img1" onclick="handleImageClick1()" src="https://img.shields.io/badge/Apache%20Groovy-4298B8.svg?style=for-the-badge&logo=Apache+Groovy&logoColor=white" alt="" />
+      <img id="img2" onclick="handleImageClick2()" src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" alt="" />
+      <img id="img3" onclick="handleImageClick3()" src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white" alt="" />
+      <img id="img4" onclick="handleImageClick4()" src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="" />
+      <img id="img5" onclick="handleImageClick5()" src="https://img.shields.io/badge/crystal-%23000000.svg?style=for-the-badge&logo=crystal&logoColor=white" alt="" />
+      <img id="img6" onclick="handleImageClick6()" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="" />
+      <img id="img7" onclick="handleImageClick7()" src="https://img.shields.io/badge/Clojure-%23Clojure.svg?style=for-the-badge&logo=Clojure&logoColor=Clojure" alt="" />
+      <img id="img8" onclick="handleImageClick8()" src="https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white" alt="" />
+      <img id="img9" onclick="handleImageClick9()" src="https://img.shields.io/badge/elixir-%234B275F.svg?style=for-the-badge&logo=elixir&logoColor=white" alt="" />
+      <img id="img10" onclick="handleImageClick10()" src="https://img.shields.io/badge/Elm-60B5CC?style=for-the-badge&logo=elm&logoColor=white" alt="" />
+      <img id="img11" onclick="handleImageClick11()" src="https://img.shields.io/badge/Erlang-white.svg?style=for-the-badge&logo=erlang&logoColor=a90533" alt="" />
+      <img id="img12" onclick="handleImageClick12()" src="https://img.shields.io/badge/Fortran-%23734F96.svg?style=for-the-badge&logo=fortran&logoColor=white" alt="" />
+      <img id="img13" onclick="handleImageClick13()" src="https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white" alt="" />
+      <img id="img14" onclick="handleImageClick14()" src="https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white" alt="" />
+      <img id="img15" onclick="handleImageClick15()" src="https://img.shields.io/badge/Haskell-5e5086?style=for-the-badge&logo=haskell&logoColor=white" alt="" />
+      <img id="img16" onclick="handleImageClick16()" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="" />
+      <img id="img17" onclick="handleImageClick17()" src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white" alt="" />
+      <img id="img18" onclick="handleImageClick18()" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="" />
+      <img id="img19" onclick="handleImageClick19()" src="https://img.shields.io/badge/-Julia-9558B2?style=for-the-badge&logo=julia&logoColor=white" alt="" />
+      <img id="img20" onclick="handleImageClick20()" src="https://img.shields.io/badge/kotlin-%230095D5.svg?style=for-the-badge&logo=kotlin&logoColor=white" alt="" />
+      <img id="img21" onclick="handleImageClick21()" src="https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white" alt="" />
+      <img id="img22" onclick="handleImageClick22()" src="https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white" alt="" />
+      <img id="img23" onclick="handleImageClick23()" src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white" alt="" />
+      <img id="img24" onclick="handleImageClick24()" src="https://img.shields.io/badge/nim-%23FFE953.svg?style=for-the-badge&logo=nim&logoColor=white" alt="" />
+      <img id="img25" onclick="handleImageClick25()" src="https://img.shields.io/badge/OCTAVE-darkblue?style=for-the-badge&logo=octave&logoColor=fcd683" alt="" />
+      <img id="img26" onclick="handleImageClick26()" src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" alt="" />
+      <img id="img27" onclick="handleImageClick27()" src="https://img.shields.io/badge/perl-%2339457E.svg?style=for-the-badge&logo=perl&logoColor=white" alt="" />
+      <img id="img28" onclick="handleImageClick28()" src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="" />
+      <img id="img29" onclick="handleImageClick29()" src="https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white" alt="" />
+      <img id="img30" onclick="handleImageClick30()" src="https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white" alt="" />
+      <img id="img31" onclick="handleImageClick31()" src="https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white" alt="" />
+      <img id="img32" onclick="handleImageClick32()" src="https://img.shields.io/badge/scala-%23DC322F.svg?style=for-the-badge&logo=scala&logoColor=white" alt="" />
+      <img id="img33" onclick="handleImageClick33()" src="https://img.shields.io/badge/-Smalltalk-596706?style=for-the-badge&logo=smalltalk&logoColor=white" alt="" />
+      <img id="img34" onclick="handleImageClick34()" src="https://img.shields.io/badge/swift-%23FA7343.svg?style=for-the-badge&logo=swift&logoColor=white" alt="" />
+      <img id="img35" onclick="handleImageClick35()" src="https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="" />
+      <img id="img36" onclick="handleImageClick36()" src="https://img.shields.io/badge/VB.NET-15C3D6?style=for-the-badge&logo=.net&logoColor=white" alt="" />
+       <img  id="img37" onclick="handleImageClick37()" src="https://img.shields.io/badge/Zig-%23F7A41D.svg?style=for-the-badge&logo=zig&logoColor=white" alt="" />
+        <hr>
+        <h1><strong>Hosting/SaaS</strong></h1>
+        <img id="img38" onclick="handleImageClick38()" src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS badge">
+<img id="img39" onclick="handleImageClick39()" src="https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=azure-devops&logoColor=white" alt="Azure badge">
+<img id="img40" onclick="handleImageClick40()" src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white" alt="Cloudflare badge">
+<img id="img41" onclick="handleImageClick41()" src="https://img.shields.io/badge/Codeberg-2185D0?style=for-the-badge&logo=Codeberg&logoColor=white" alt="Codeberg badge">
+<img id="img42" onclick="handleImageClick42()" src="https://img.shields.io/badge/datadog-%23632CA6.svg?style=for-the-badge&logo=datadog&logoColor=white" alt="Datadog badge">
+<img id="img43" onclick="handleImageClick43()" src="https://img.shields.io/badge/DigitalOcean-%230167ff.svg?style=for-the-badge&logo=digitalOcean&logoColor=white" alt="DigitalOcean badge">
+<img id="img44" onclick="handleImageClick44()" src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase" alt="Firebase badge">
+<img id="img45" onclick="handleImageClick45()" src="https://img.shields.io/badge/glitch-%233333FF.svg?style=for-the-badge&logo=glitch&logoColor=white" alt="Glitch badge">
+<img id="img46" onclick="handleImageClick46()" src="https://img.shields.io/badge/Google%20Cloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white" alt="Google Cloud badge">
+<img id="img47" onclick="handleImageClick47()" src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white" alt="Heroku badge">
+<img id="img48" onclick="handleImageClick48()" src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7" alt="Netlify badge">
+<img id="img49" onclick="handleImageClick49()" src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="Oracle badge">
+<img id="img50" onclick="handleImageClick50()" src="https://img.shields.io/badge/Openstack-%23f01742.svg?style=for-the-badge&logo=openstack&logoColor=white" alt="OpenStack badge">
+<img id="img51" onclick="handleImageClick51()" src="https://img.shields.io/badge/SCALEWAY-%234f0599.svg?style=for-the-badge&logo=scaleway&logoColor=white" alt="Scaleway badge">
+<img id="img52" onclick="handleImageClick52()" src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel badge">
+<hr>
+
+<h1><strong>FRAMEWORKS, PLATFORMS & LIBRARIES</strong></h1>
+<img id="img53" onclick="handleImageClick53()" src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white" alt=".NET badge">
+<img id="img54" onclick="handleImageClick54()" src="https://img.shields.io/badge/adonisjs-%23220052.svg?style=for-the-badge&logo=adonisjs&logoColor=white" alt="AdonisJS badge">
+<img id="img55" onclick="handleImageClick55()" src="https://img.shields.io/badge/Anaconda-%2344A833.svg?style=for-the-badge&logo=anaconda&logoColor=white" alt="Anaconda badge">
+<img id="img56" onclick="handleImageClick56()" src="https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white" alt="Angular badge">
+<img id="img57" onclick="handleImageClick57()" src="https://img.shields.io/badge/angular.js-%23E23237.svg?style=for-the-badge&logo=angularjs&logoColor=white" alt="AngularJS badge">
+<img id="img58" onclick="handleImageClick58()" src="https://img.shields.io/badge/-AntDesign-%230170FE?style=for-the-badge&logo=ant-design&logoColor=white" alt="Ant-Design badge">
+<img id="img59" onclick="handleImageClick59()" src="https://img.shields.io/badge/chart.js-F5788D.svg?style=for-the-badge&logo=chart.js&logoColor=white" alt="Chart.js badge">
+<img id="img60" onclick="handleImageClick60()" src="https://img.shields.io/badge/chakra-%234ED1C5.svg?style=for-the-badge&logo=chakraui&logoColor=white" alt="Chakra badge">
+<img id="img61" onclick="handleImageClick61()" src="https://img.shields.io/badge/Buefy-7957D5?style=for-the-badge&logo=buefy&logoColor=48289E" alt="Buefy badge">
+<img id="img62" onclick="handleImageClick62()" src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap badge">
+<img id="img63" onclick="handleImageClick63()" src="https://img.shields.io/badge/aurelia-%23ED2B88.svg?style=for-the-badge&logo=aurelia&logoColor=fff" alt="Aurelia badge">
+<img id="img64" onclick="handleImageClick64()" src="https://img.shields.io/badge/-ApolloGraphQL-311C87?style=for-the-badge&logo=apollo-graphql" alt="Apollo GraphQL badge">
+<img id="img65" onclick="handleImageClick65()" src="https://img.shields.io/badge/CodeIgniter-%23EF4223.svg?style=for-the-badge&logo=codeIgniter&logoColor=white" alt="CodeIgniter badge">
+<img id="img66" onclick="handleImageClick66()" src="https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white" alt="Django badge">
+
+<img id="img67" onclick="handleImageClick67()" src="https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&amp;logo=django&amp;logoColor=white&amp;color=ff1709&amp;labelColor=gray" alt="DjangoREST" height="50">
+<img id="img68" onclick="handleImageClick68()" src="https://img.shields.io/badge/Electron-191970?style=for-the-badge&amp;logo=Electron&amp;logoColor=white" alt="Electron.js" height="50">
+<img id="img69" onclick="handleImageClick69()" src="https://img.shields.io/badge/ember-1C1E24?style=for-the-badge&amp;logo=ember.js&amp;logoColor=#D04A37" alt="Ember" height="50">
+<img id="img70" onclick="handleImageClick70()" src="https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&amp;logo=expo&amp;logoColor=#D04A37" alt="Expo" height="50">
+<img id="img71" onclick="handleImageClick71()" src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&amp;logo=express&amp;logoColor=%2361DAFB" alt="Express.js" height="50">
+<img id="img72" onclick="handleImageClick72()" src="https://img.shields.io/badge/Insomnia-black?style=for-the-badge&amp;logo=insomnia&amp;logoColor=5849BE" alt="Insomnia" height="50">
+<img id="img73" onclick="handleImageClick73()" src="https://img.shields.io/badge/GULP-%23CF4647.svg?style=for-the-badge&amp;logo=gulp&amp;logoColor=white" alt="Gulp" height="50">
+<img id="img74" onclick="handleImageClick74()" src="https://img.shields.io/badge/green%20sock-88CE02?style=for-the-badge&amp;logo=greensock&amp;logoColor=white" alt="Green Sock" height="50">
+<img id="img75" onclick="handleImageClick75()" src="https://img.shields.io/badge/Gatsby-%23663399.svg?style=for-the-badge&amp;logo=gatsby&amp;logoColor=white" alt="Gatsby" height="50">
+<img id="img76" onclick="handleImageClick76()" src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&amp;logo=Flutter&amp;logoColor=white" alt="Flutter" height="50">
+<img id="img77" onclick="handleImageClick77()" src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&amp;logo=flask&amp;logoColor=white" alt="Flask" height="50">
+<img id="img78" onclick="handleImageClick78()" src="https://img.shields.io/badge/fastify-%23000000.svg?style=for-the-badge&amp;logo=fastify&amp;logoColor=white" alt="Fastify" height="50">
+<img id="img79" onclick="handleImageClick79()" src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&amp;logo=fastapi" alt="FastAPI" height="50">
+<img id="img80" onclick="handleImageClick80()" src="https://img.shields.io/badge/jasmine-%238A4182.svg?style=for-the-badge&amp;logo=jasmine&amp;logoColor=white" alt="Jasmine" height="50">
+<img id="img81" onclick="handleImageClick81()" src="https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&amp;logo=jquery&amp;logoColor=white" alt="jQuery" height="50">
+<img id="img82" onclick="handleImageClick82()" src="https://img.shields.io/badge/JWT-black?style=for-the-badge&amp;logo=JSON%20web%20tokens" alt="JWT" height="50">
+<img id="img83" onclick="handleImageClick83()" src="https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&amp;logo=laravel&amp;logoColor=white" alt="Laravel" height="50">
+<img id="img84" onclick="handleImageClick84()" src="https://img.shields.io/badge/less-2B4C80?style=for-the-badge&logo=less&logoColor=white" alt="Less badge" height="50">
+<img id="img85" onclick="handleImageClick85()" src="https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=material-ui&logoColor=white" alt="MUI badge" height="50">
+<img id="img86" onclick="handleImageClick86()" src="https://img.shields.io/badge/meteorjs-%23d74c4c.svg?style=for-the-badge&logo=meteor&logoColor=white" alt="Meteor JS badge" height="50">
+<img id="img87" onclick="handleImageClick87()" src="https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white" alt="NPM badge" height="50">
+<img id="img88" onclick="handleImageClick88()" src="https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white" alt="NestJS badge" height="50">
+<img id="img89" onclick="handleImageClick89()" src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next JS badge" height="50">
+<img id="img90" onclick="handleImageClick90()" src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="NodeJS badge" height="50">
+<img id="img91" onclick="handleImageClick91()" src="https://img.shields.io/badge/Nuxt-black?style=for-the-badge&logo=nuxt.js&logoColor=white" alt="NuxtJS badge" height="50">
+<img id="img92" onclick="handleImageClick92()" src="https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV badge" height="50">
+<img id="img93" onclick="handleImageClick93()" src="https://img.shields.io/badge/p5.js-ED225D?style=for-the-badge&logo=p5.js&logoColor=FFFFFF" alt="p5js badge" height="50">
+<img id="img94" onclick="handleImageClick94()" src="https://img.shields.io/badge/Pug-FFF?style=for-the-badge&logo=pug&logoColor=A86454" alt="Pug badge" height="50">
+<img id="img95" onclick="handleImageClick95()" src="https://img.shields.io/badge/Qt-%23217346.svg?style=for-the-badge&logo=Qt&logoColor=white" alt="Qt badge" height="50">
+<img id="img96" onclick="handleImageClick96()" src="https://img.shields.io/badge/Quasar-16B7FB?style=for-the-badge&logo=quasar&logoColor=black" alt="Quasar badge" height="50">
+<img id="img97" onclick="handleImageClick97()" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React badge" height="50">
+<img id="img98" onclick="handleImageClick98()" src="https://img.shields.io/badge/android-%2320232a.svg?style=for-the-badge&logo=android&logoColor=%a4c639" alt="Android badge" height="50">
+<img id="img99" onclick="handleImageClick99()" src="https://img.shields.io/badge/IOS-%2320232a.svg?style=for-the-badge&logo=apple&logoColor=white" alt="iOS badge" height="50">
+<img id="img100" onclick="handleImageClick100()" src="https://img.shields.io/badge/godot-3582bb.svg?style=for-the-badge&logo=godot-engine&logoColor=white" alt="Godot badge" height="50">
+<img id="img101" onclick="handleImageClick101()" src="https://img.shields.io/badge/unreal-%2320232a.svg?style=for-the-badge&amp;logo=unreal-engine&amp;logoColor=white" alt="Unreal badge">
+<img id="img102" onclick="handleImageClick102()" src="https://img.shields.io/badge/Unity-%2320232a.svg?style=for-the-badge&amp;logo=unity&amp;logoColor=white" alt="Unity badge">
+<img id="img103" onclick="handleImageClick103()" src="https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&amp;logo=ruby-on-rails&amp;logoColor=white" alt="Rails badge">
+<img id="img104" onclick="handleImageClick104()" src="https://img.shields.io/badge/ros-%230A0FF9.svg?style=for-the-badge&amp;logo=ros&amp;logoColor=white" alt="ROS badge">
+<img id="img105" onclick="handleImageClick105()" src="https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&amp;logo=react&amp;logoColor=%2361DAFB" alt="React Native badge">
+<img id="img106" onclick="handleImageClick106()" src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&amp;logo=react-router&amp;logoColor=white" alt="React Router badge">
+<img id="img107" onclick="handleImageClick107()" src="https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&amp;logo=redux&amp;logoColor=white" alt="Redux badge">
+<img id="img108" onclick="handleImageClick108()" src="https://img.shields.io/badge/rxjs-%23B7178C.svg?style=for-the-badge&amp;logo=reactivex&amp;logoColor=white" alt="RxJS badge">
+<img id="img109" onclick="handleImageClick109()" src="https://img.shields.io/badge/rxjs-%23B7178C.svg?style=for-the-badge&amp;logo=reactivex&amp;logoColor=white" alt="RxDB badge">
+<img id="img110" onclick="handleImageClick110()" src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&amp;logo=SASS&amp;logoColor=white" alt="SASS badge">
+<img id="img111" onclick="handleImageClick111()" src="https://img.shields.io/badge/Semantic%20UI%20React-%2335BDB2.svg?style=for-the-badge&amp;logo=SemanticUIReact&amp;logoColor=white" alt="Semantic UI React badge">
+<img id="img112" onclick="handleImageClick112()" src="https://img.shields.io/badge/symfony-%23000000.svg?style=for-the-badge&amp;logo=symfony&amp;logoColor=white" alt="Symfony badge">
+<img id="img113" onclick="handleImageClick113()" src="https://img.shields.io/badge/svelte-%23f1413d.svg?style=for-the-badge&amp;logo=svelte&amp;logoColor=white" alt="Svelte badge">
+<img id="img114" onclick="handleImageClick114()" src="https://img.shields.io/badge/Vuetify-1867C0?style=for-the-badge&amp;logo=vuetify&amp;logoColor=AEDDFF" alt="Vuetify badge">
+<img id="img115" onclick="handleImageClick115()" src="https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&amp;logo=webpack&amp;logoColor=black" alt="Webpack badge">
+<img id="img116" onclick="handleImageClick116()" src="https://img.shields.io/badge/stylus-%23ff6347.svg?style=for-the-badge&amp;logo=stylus&amp;logoColor=white" alt="Stylus badge">
+<img id="img117" onclick="handleImageClick117()" src="https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&amp;logo=vuedotjs&amp;logoColor=%234FC08D" alt="Vue.js badge">
+<img id="img118" onclick="handleImageClick118()" src="https://img.shields.io/badge/-TypeGraphQL-%23C04392?style=for-the-badge" alt="Type-graphql badge">
+<img id="img119" onclick="handleImageClick119()" src="https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&amp;logo=yarn&amp;logoColor=white" alt="Yarn badge">
+<img id="img120" onclick="handleImageClick120()" src="https://img.shields.io/badge/Xamarin-3199DC?style=for-the-badge&amp;logo=xamarin&amp;logoColor=white" alt="Xamarin badge">
+<img id="img121" onclick="handleImageClick121()" src="https://img.shields.io/badge/Thymeleaf-%23005C0F.svg?style=for-the-badge&amp;logo=Thymeleaf&amp;logoColor=white" alt="Thymeleaf badge">
+<img id="img122" onclick="handleImageClick122()" src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&amp;logo=styled-components&amp;logoColor=white" alt="Styled Components badge">
+<img id="img123" onclick="handleImageClick123()" src="https://img.shields.io/badge/strapi-%232E7EEA.svg?style=for-the-badge&amp;logo=strapi&amp;logoColor=white" alt="Strapi badge">
+<img id="img124" onclick="handleImageClick124()" src="https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&amp;logo=spring&amp;logoColor=white" alt="Spring badge">
+<img id="img125" onclick="handleImageClick125()" src="https://img.shields.io/badge/Socket.io-black?style=for-the-badge&amp;logo=socket.io&amp;badgeColor=010101" alt="Socket.io badge">
+<img id="img126" onclick="handleImageClick126()" src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&amp;logo=tailwind-css&amp;logoColor=white" alt="TailwindCSS badge">
+<img id="img127" onclick="handleImageClick127()" src="https://img.shields.io/badge/threejs-black?style=for-the-badge&amp;logo=three.js&amp;logoColor=white" alt="Threejs badge"><hr>
+
+<h1><strong>SERVERS</strong></h1>
+<img id="img128" onclick="handleImageClick128()" src="https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&amp;logo=apache&amp;logoColor=white" alt="Apache badge">
+<img id="img129" onclick="handleImageClick129()" src="https://img.shields.io/badge/Apache%20Airflow-017CEE?style=for-the-badge&amp;logo=Apache%20Airflow&amp;logoColor=white" alt="Apache Airflow badge">
+<img id="img130" onclick="handleImageClick130()" src="https://img.shields.io/badge/Apache%20Ant-A81C7D?style=for-the-badge&amp;logo=Apache%20Ant&amp;logoColor=white" alt="Apache Ant badge">
+<img id="img131" onclick="handleImageClick131()" src="https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&amp;logo=nginx&amp;logoColor=white" alt="Nginx badge">
+<img id="img132" onclick="handleImageClick132()" src="https://img.shields.io/badge/Apache%20Flink-E6526F?style=for-the-badge&amp;logo=Apache%20Flink&amp;logoColor=white" alt="Apache Flink badge">
+<img id="img133" onclick="handleImageClick133()" src="https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&amp;logo=Apache%20Maven&amp;logoColor=white" alt="Apache Maven badge">
+<img id="img134" onclick="handleImageClick134()" src="https://img.shields.io/badge/jenkins-%232C5263.svg?style=for-the-badge&amp;logo=jenkins&amp;logoColor=white" alt="Jenkins badge">
+
+<hr>
+
+<h1><strong>DATABASES</strong></h1>
+<img id="img135" onclick="handleImageClick135()" src="https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=for-the-badge&logo=Amazon%20DynamoDB&logoColor=white" alt="AmazonDynamoDB badge" height="50">
+<img id="img136" onclick="handleImageClick136()" src="https://img.shields.io/badge/cassandra-%231287B1.svg?style=for-the-badge&logo=apache-cassandra&logoColor=white" alt="ApacheCassandra badge" height="50">
+<img id="img137" onclick="handleImageClick137()" src="https://img.shields.io/badge/Cockroach%20Labs-6933FF?style=for-the-badge&logo=Cockroach%20Labs&logoColor=white" alt="CockroachLabs badge" height="50">
+<img id="img138" onclick="handleImageClick138()" src="https://img.shields.io/badge/Couchbase-EA2328?style=for-the-badge&logo=couchbase&logoColor=white" alt="Couchbase badge" height="50">
+<img id="img139" onclick="handleImageClick139()" src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white" alt="MariaDB badge" height="50">
+<img id="img140" onclick="handleImageClick140()" src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="Postgres badge" height="50">
+<img id="img141" onclick="handleImageClick141()" src="https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white" alt="Neo4J badge" height="50">
+<img id="img142" onclick="handleImageClick142()" src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL badge" height="50">
+<img id="img143" onclick="handleImageClick143()" src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB badge" height="50">
+<img id="img144" onclick="handleImageClick144()" src="https://img.shields.io/badge/Microsoft%20SQL%20Sever-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white" alt="Microsoft SQL Server logo" height="50">
+<img id="img145" onclick="handleImageClick145()" src="https://img.shields.io/badge/Musicbrainz-EB743B?style=for-the-badge&logo=musicbrainz&logoColor=BA478F" alt="Musicbrainz logo" height="50">
+<img id="img146" onclick="handleImageClick146()" src="https://img.shields.io/badge/Realm-39477F?style=for-the-badge&logo=realm&logoColor=white" alt="Realm logo" height="50">
+<img id="img147" onclick="handleImageClick147()" src="https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white" alt="Redis logo" height="50">
+<img id="img148" onclick="handleImageClick148()" src="https://img.shields.io/badge/Single%20Store-AA00FF?style=for-the-badge&logo=singlestore&logoColor=white" alt="Single Store logo" height="50">
+<img id="img149" onclick="handleImageClick149()" src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite logo" height="50">
+<img id="img150" onclick="handleImageClick150()" src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase logo" height="50">
+
+<hr>
+
+<h1><strong>DESIGN</strong></h1>
+<img id="img151" onclick="handleImageClick151()" src="https://img.shields.io/badge/Adobe%20After%20Effects-9999FF.svg?style=for-the-badge&logo=Adobe%20After%20Effects&logoColor=white" alt="Adobe After Effects">
+<img id="img152" onclick="handleImageClick152()" src="https://img.shields.io/badge/Adobe%20Audition-9999FF.svg?style=for-the-badge&logo=Adobe%20Audition&logoColor=white" alt="Adobe Audition">
+<img id="img153" onclick="handleImageClick153()" src="https://img.shields.io/badge/Adobe%20Dreamweaver-FF61F6.svg?style=for-the-badge&logo=Adobe%20Dreamweaver&logoColor=white" alt="Adobe Dreamweaver">
+<img id="img154" onclick="handleImageClick154()" src="https://img.shields.io/badge/adobeillustrator-%23FF9A00.svg?style=for-the-badge&logo=adobeillustrator&logoColor=white" alt="Adobe Illustrator">
+<img id="img155" onclick="handleImageClick155()" src="https://img.shields.io/badge/Adobe%20XD-470137?style=for-the-badge&logo=Adobe%20XD&logoColor=#FF61F6" alt="Adobe XD">
+<img id="img156" onclick="handleImageClick156()" src="https://img.shields.io/badge/Adobe%20Premiere%20Pro-9999FF.svg?style=for-the-badge&logo=Adobe%20Premiere%20Pro&logoColor=white" alt="Adobe Premiere Pro">
+<img id="img157" onclick="handleImageClick157()" src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" alt="Figma">
+<img id="img158" onclick="handleImageClick158()" src="https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue" alt="Framer">
+<img id="img159" onclick="handleImageClick159()" src="https://img.shields.io/badge/Sketch-FFB387?style=for-the-badge&logo=sketch&logoColor=black" alt="Sketch">
+<img id="img160" onclick="handleImageClick160()" src="https://img.shields.io/badge/Proto.io-161637?style=for-the-badge&logo=proto.io&logoColor=00e5ff" alt="Proto.io">
+<img id="img161" onclick="handleImageClick161()" src="https://img.shields.io/badge/Dribbble-EA4C89?style=for-the-badge&logo=dribbble&logoColor=white" alt="Dribbble">
+<img id="img162" onclick="handleImageClick162()" src="https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white" alt="Canva">
+<img id="img163" onclick="handleImageClick163()" src="https://img.shields.io/badge/adobephotoshop-%2331A8FF.svg?style=for-the-badge&logo=adobephotoshop&logoColor=white" alt="Adobe Photoshop">
+<img id="img164" onclick="handleImageClick164()" src="https://img.shields.io/badge/blender-%23F5792A.svg?style=for-the-badge&logo=blender&logoColor=white" alt="Blender">
+<img id="img165" onclick="handleImageClick165()" src="https://img.shields.io/badge/Krita-203759?style=for-the-badge&logo=krita&logoColor=EEF37B" alt="Krita">
+<img id="img166" onclick="handleImageClick166()" src="https://img.shields.io/badge/Inkscape-e0e0e0?style=for-the-badge&logo=inkscape&logoColor=080A13" alt="Inkscape">
+<img id="img167" onclick="handleImageClick167()" src="https://img.shields.io/badge/Gimp-657D8B?style=for-the-badge&logo=gimp&logoColor=FFFFFF" alt="Gimp Gnu Image Manipulation Program">
+<img id="img168" onclick="handleImageClick168()" src="https://img.shields.io/badge/affinitydesginer-%231B72BE.svg?style=for-the-badge&logo=affinity-designer&logoColor=white" alt="Affinity Designer">
+<img id="img169" onclick="handleImageClick169()" src="https://img.shields.io/badge/Adobe%20Lightroom-31A8FF.svg?style=for-the-badge&logo=Adobe%20Lightroom&logoColor=white" alt="Adobe Lightroom">
+<img id="img170" onclick="handleImageClick170()" src="https://img.shields.io/badge/Adobe%20InDesign-49021F?style=for-the-badge&logo=adobeindesign&logoColor=white" alt="Adobe InDesign">
+<img id="img171" onclick="handleImageClick171()" src="https://img.shields.io/badge/Aseprite-FFFFFF?style=for-the-badge&logo=Aseprite&logoColor=#7D929E" alt="Aseprite">
+<hr>
+
+<h1><strong>ML/DL</strong></h1>
+<img id="img172" onclick="handleImageClick172()" src="https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white" alt="Keras badge">
+<img id="img173" onclick="handleImageClick173()" src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy badge">
+<img id="img174" onclick="handleImageClick174()" src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas badge">
+<img id="img175" onclick="handleImageClick175()" src="https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly badge">
+<img id="img176" onclick="handleImageClick176()" src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white" alt="PyTorch badge">
+<img id="img177" onclick="handleImageClick177()" src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="scikit-learn badge">
+<img id="img178" onclick="handleImageClick178()" src="https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white" alt="SciPy badge">
+<img id="img179" onclick="handleImageClick179()" src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white" alt="TensorFlow badge">
+
+<hr>
+
+<h1><strong>OTHER</strong></h1>
+<img id="img180" onclick="handleImageClick180()" src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux badge">
+<img id="img181" onclick="handleImageClick181()" src="https://img.shields.io/badge/alfred-%235C1F87.svg?style=for-the-badge&logo=alfred" alt="Alfred badge">
+<img id="img182" onclick="handleImageClick182()" src="https://img.shields.io/badge/ansible-%231A1918.svg?style=for-the-badge&logo=ansible&logoColor=white" alt="Ansible badge">
+<img id="img183" onclick="handleImageClick183()" src="https://img.shields.io/badge/aqua-%231904DA.svg?style=for-the-badge&logo=aqua&logoColor=%230018A8" alt="AquaSec badge">
+<img id="img184" onclick="handleImageClick184()" src="https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white" alt="Arduino badge">
+<img id="img185" onclick="handleImageClick185()" src="https://img.shields.io/badge/Babel-F9DC3e?style=for-the-badge&logo=babel&logoColor=black" alt="Babel badge">
+<img id="img186" onclick="handleImageClick186()" src="https://img.shields.io/badge/CMake-%23008FBA.svg?style=for-the-badge&logo=cmake&logoColor=white" alt="CMake badge">
+<img id="img187" onclick="handleImageClick187()" src="https://img.shields.io/badge/codecov-%23ff0077.svg?style=for-the-badge&logo=codecov&logoColor=white" alt="CodeCov badge">
+<img id="img188" onclick="handleImageClick188()" src="https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes badge">
+<img id="img189" onclick="handleImageClick189()" src="https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white" alt="Swagger badge">
+<img id="img190" onclick="handleImageClick190()" src="https://img.shields.io/badge/-RaspberryPi-C51A4A?style=for-the-badge&logo=Raspberry-Pi" alt="Raspberry Pi badge">
+
+  <img id="img191" onclick="handleImageClick191()" src="https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white" alt="Jira">
+  <img id="img192" onclick="handleImageClick192()" src="https://img.shields.io/badge/Gradle-02303A.svg?style=for-the-badge&logo=Gradle&logoColor=white" alt="Gradle">
+  <img id="img193" onclick="handleImageClick193()" src="https://img.shields.io/badge/rancher-%230075A8.svg?style=for-the-badge&logo=rancher&logoColor=white" alt="Rancher">
+  <img id="img194" onclick="handleImageClick194()" src="https://img.shields.io/badge/vagrant-%231563FF.svg?style=for-the-badge&logo=vagrant&logoColor=white" alt="Vagrant">
+  <img id="img195" onclick="handleImageClick195()" src="https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white" alt="Trello">
+  <img id="img196" onclick="handleImageClick196()" src="https://img.shields.io/badge/Prezi-%23000000.svg?style=for-the-badge&logo=Prezi&logoColor=white" alt="Prezi">
+  <img id="img197" onclick="handleImageClick197()" src="https://img.shields.io/badge/-ElasticSearch-005571?style=for-the-badge&logo=elasticsearch" alt="ElasticSearch">
+  <img id="img198" onclick="handleImageClick198()" src="https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white" alt="ESLint">
+  <img id="img199" onclick="handleImageClick199()" src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman">
+  <img id="img200" onclick="handleImageClick200()" src="https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform">
+  <img id="img201" onclick="handleImageClick201()" src="https://img.shields.io/badge/Portfolio-%23000000.svg?style=for-the-badge&logo=firefox&logoColor=#FF7139" alt="Portfolio">
+  <img id="img202" onclick="handleImageClick202()" src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+  <img id="img203" onclick="handleImageClick203()" src="https://img.shields.io/badge/confluence-%23172BF4.svg?style=for-the-badge&logo=confluence&logoColor=white" alt="Confluence">
+  <img id="img204" onclick="handleImageClick204()" src="https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white" alt="Notion" >
+
+<hr>
+
+
+</div>
+<div class="enter-container"><button class="enter" onclick="redirectToPage()">Next</button></div>
+  </form>
+</body>
+  <script>
+  var authM =localStorage.getItem("Auth");
+      if(authM==null || authM=="" || authM!="Monu Singh"){
+        window.location.href = "LogIn.html";
+      }
+
+  
+      // Function to handle image click event
+      function redirectToPage() {
+        event.preventDefault();
+      window.location.href =  "temp.html";
+    }
+    function handleImageClick1() {
+  var image1 = document.getElementById("img1");
+ var link = image1.src;
+localStorage.setItem("img1", link);
+    }
+    function handleImageClick2() {
+  var image2 = document.getElementById("img2");
+  var link2 = image2.src;
+  localStorage.setItem("img2", link2);
+}
+
+function handleImageClick3() {
+  var image3 = document.getElementById("img3");
+  var link3 = image3.src;
+  localStorage.setItem("img3", link3);
+}
+
+function handleImageClick4() {
+  var image4 = document.getElementById("img4");
+  var link4 = image4.src;
+  localStorage.setItem("img4", link4);
+}
+
+function handleImageClick5() {
+  var image5 = document.getElementById("img5");
+  var link5 = image5.src;
+  localStorage.setItem("img5", link5);
+}
+
+function handleImageClick6() {
+  var image6 = document.getElementById("img6");
+  var link6 = image6.src;
+  localStorage.setItem("img6", link6);
+}
+
+function handleImageClick7() {
+  var image7 = document.getElementById("img7");
+  var link7 = image7.src;
+  localStorage.setItem("img7", link7);
+}
+
+function handleImageClick8() {
+  var image8 = document.getElementById("img8");
+  var link8 = image8.src;
+  localStorage.setItem("img8", link8);
+}
+
+function handleImageClick9() {
+  var image9 = document.getElementById("img9");
+  var link9 = image9.src;
+  localStorage.setItem("img9", link9);
+}
+
+function handleImageClick10() {
+  var image10 = document.getElementById("img10");
+  var link10 = image10.src;
+  localStorage.setItem("img10", link10);
+}
+
+function handleImageClick11() {
+  var image11 = document.getElementById("img11");
+  var link11 = image11.src;
+  localStorage.setItem("img11", link11);
+}
+
+function handleImageClick12() {
+  var image12 = document.getElementById("img12");
+  var link12 = image12.src;
+  localStorage.setItem("img12", link12);
+}
+
+function handleImageClick13() {
+  var image13 = document.getElementById("img13");
+  var link13 = image13.src;
+  localStorage.setItem("img13", link13);
+}
+
+function handleImageClick14() {
+  var image14 = document.getElementById("img14");
+  var link14 = image14.src;
+  localStorage.setItem("img14", link14);
+}
+
+function handleImageClick15() {
+  var image15 = document.getElementById("img15");
+  var link15 = image15.src;
+  localStorage.setItem("img15", link15);
+}
+
+function handleImageClick16() {
+  var image16 = document.getElementById("img16");
+  var link16 = image16.src;
+  localStorage.setItem("img16", link16);
+}
+
+function handleImageClick17() {
+  var image17 = document.getElementById("img17");
+  var link17 = image17.src;
+  localStorage.setItem("img17", link17);
+}
+
+function handleImageClick18() {
+  var image18 = document.getElementById("img18");
+  var link18 = image18.src;
+  localStorage.setItem("img18", link18);
+}
+
+function handleImageClick19() {
+  var image19 = document.getElementById("img19");
+  var link19 = image19.src;
+  localStorage.setItem("img19", link19);
+}
+
+function handleImageClick20() {
+  var image20 = document.getElementById("img20");
+  var link20 = image20.src;
+  localStorage.setItem("img20", link20);
+}
+
+function handleImageClick21() {
+  var image21 = document.getElementById("img21");
+  var link21 = image21.src;
+  localStorage.setItem("img21", link21);
+}
+
+function handleImageClick22() {
+  var image22 = document.getElementById("img22");
+  var link22 = image22.src;
+  localStorage.setItem("img22", link22);
+}
+
+function handleImageClick23() {
+  var image23 = document.getElementById("img23");
+  var link23 = image23.src;
+  localStorage.setItem("img23", link23);
+}
+
+function handleImageClick24() {
+  var image24 = document.getElementById("img24");
+  var link24 = image24.src;
+  localStorage.setItem("img24", link24);
+}
+
+function handleImageClick25() {
+  var image25 = document.getElementById("img25");
+  var link25 = image25.src;
+  localStorage.setItem("img25", link25);
+}
+
+function handleImageClick26() {
+  var image26 = document.getElementById("img26");
+  var link26 = image26.src;
+  localStorage.setItem("img26", link26);
+}
+
+function handleImageClick27() {
+  var image27 = document.getElementById("img27");
+  var link27 = image27.src;
+  localStorage.setItem("img27", link27);
+}
+
+function handleImageClick28() {
+  var image28 = document.getElementById("img28");
+  var link28 = image28.src;
+  localStorage.setItem("img28", link28);
+}
+
+function handleImageClick29() {
+  var image29 = document.getElementById("img29");
+  var link29 = image29.src;
+  localStorage.setItem("img29", link29);
+}
+
+function handleImageClick30() {
+  var image30 = document.getElementById("img30");
+  var link30 = image30.src;
+  localStorage.setItem("img30", link30);
+}
+
+function handleImageClick31() {
+  var image31 = document.getElementById("img31");
+  var link31 = image31.src;
+  localStorage.setItem("img31", link31);
+}
+
+function handleImageClick32() {
+  var image32 = document.getElementById("img32");
+  var link32 = image32.src;
+  localStorage.setItem("img32", link32);
+}
+
+function handleImageClick33() {
+  var image33 = document.getElementById("img33");
+  var link33 = image33.src;
+  localStorage.setItem("img33", link33);
+}
+
+function handleImageClick34() {
+  var image34 = document.getElementById("img34");
+  var link34 = image34.src;
+  localStorage.setItem("img34", link34);
+}
+
+function handleImageClick35() {
+  var image35 = document.getElementById("img35");
+  var link35 = image35.src;
+  localStorage.setItem("img35", link35);
+}
+
+function handleImageClick36() {
+  var image36 = document.getElementById("img36");
+  var link36 = image36.src;
+  localStorage.setItem("img36", link36);
+}
+
+function handleImageClick37() {
+  var image37 = document.getElementById("img37");
+  var link37 = image37.src;
+  localStorage.setItem("img37", link37);
+}
+
+function handleImageClick38() {
+  var image38 = document.getElementById("img38");
+  var link38 = image38.src;
+  localStorage.setItem("img38", link38);
+}
+
+function handleImageClick39() {
+  var image39 = document.getElementById("img39");
+  var link39 = image39.src;
+  localStorage.setItem("img39", link39);
+}
+
+function handleImageClick40() {
+  var image40 = document.getElementById("img40");
+  var link40 = image40.src;
+  localStorage.setItem("img40", link40);
+}
+
+function handleImageClick41() {
+  var image41 = document.getElementById("img41");
+  var link41 = image41.src;
+  localStorage.setItem("img41", link41);
+}
+
+function handleImageClick42() {
+  var image42 = document.getElementById("img42");
+  var link42 = image42.src;
+  localStorage.setItem("img42", link42);
+}
+
+function handleImageClick43() {
+  var image43 = document.getElementById("img43");
+  var link43 = image43.src;
+  localStorage.setItem("img43", link43);
+}
+
+function handleImageClick44() {
+  var image44 = document.getElementById("img44");
+  var link44 = image44.src;
+  localStorage.setItem("img44", link44);
+}
+
+function handleImageClick45() {
+  var image45 = document.getElementById("img45");
+  var link45 = image45.src;
+  localStorage.setItem("img45", link45);
+}
+
+function handleImageClick46() {
+  var image46 = document.getElementById("img46");
+  var link46 = image46.src;
+  localStorage.setItem("img46", link46);
+}
+
+function handleImageClick47() {
+  var image47 = document.getElementById("img47");
+  var link47 = image47.src;
+  localStorage.setItem("img47", link47);
+}
+
+function handleImageClick48() {
+  var image48 = document.getElementById("img48");
+  var link48 = image48.src;
+  localStorage.setItem("img48", link48);
+}
+
+function handleImageClick49() {
+  var image49 = document.getElementById("img49");
+  var link49 = image49.src;
+  localStorage.setItem("img49", link49);
+}
+
+function handleImageClick50() {
+  var image50 = document.getElementById("img50");
+  var link50 = image50.src;
+  localStorage.setItem("img50", link50);
+}
+
+function handleImageClick51() {
+  var image51 = document.getElementById("img51");
+  var link51 = image51.src;
+  localStorage.setItem("img51", link51);
+}
+
+function handleImageClick52() {
+  var image52 = document.getElementById("img52");
+  var link52 = image52.src;
+  localStorage.setItem("img52", link52);
+}
+
+function handleImageClick53() {
+  var image53 = document.getElementById("img53");
+  var link53 = image53.src;
+  localStorage.setItem("img53", link53);
+}
+
+function handleImageClick54() {
+  var image54 = document.getElementById("img54");
+  var link54 = image54.src;
+  localStorage.setItem("img54", link54);
+}
+
+function handleImageClick55() {
+  var image55 = document.getElementById("img55");
+  var link55 = image55.src;
+  localStorage.setItem("img55", link55);
+}
+
+function handleImageClick56() {
+  var image56 = document.getElementById("img56");
+  var link56 = image56.src;
+  localStorage.setItem("img56", link56);
+}
+
+function handleImageClick57() {
+  var image57 = document.getElementById("img57");
+  var link57 = image57.src;
+  localStorage.setItem("img57", link57);
+}
+
+function handleImageClick58() {
+  var image58 = document.getElementById("img58");
+  var link58 = image58.src;
+  localStorage.setItem("img58", link58);
+}
+
+function handleImageClick59() {
+  var image59 = document.getElementById("img59");
+  var link59 = image59.src;
+  localStorage.setItem("img59", link59);
+}
+
+function handleImageClick60() {
+  var image60 = document.getElementById("img60");
+  var link60 = image60.src;
+  localStorage.setItem("img60", link60);
+}
+
+function handleImageClick61() {
+  var image61 = document.getElementById("img61");
+  var link61 = image61.src;
+  localStorage.setItem("img61", link61);
+}
+
+function handleImageClick62() {
+  var image62 = document.getElementById("img62");
+  var link62 = image62.src;
+  localStorage.setItem("img62", link62);
+}
+
+function handleImageClick63() {
+  var image63 = document.getElementById("img63");
+  var link63 = image63.src;
+  localStorage.setItem("img63", link63);
+}
+
+function handleImageClick64() {
+  var image64 = document.getElementById("img64");
+  var link64 = image64.src;
+  localStorage.setItem("img64", link64);
+}
+
+function handleImageClick65() {
+  var image65 = document.getElementById("img65");
+  var link65 = image65.src;
+  localStorage.setItem("img65", link65);
+}
+
+function handleImageClick66() {
+  var image66 = document.getElementById("img66");
+  var link66 = image66.src;
+  localStorage.setItem("img66", link66);
+}
+
+function handleImageClick67() {
+  var image67 = document.getElementById("img67");
+  var link67 = image67.src;
+  localStorage.setItem("img67", link67);
+}
+
+function handleImageClick68() {
+  var image68 = document.getElementById("img68");
+  var link68 = image68.src;
+  localStorage.setItem("img68", link68);
+}
+
+function handleImageClick69() {
+  var image69 = document.getElementById("img69");
+  var link69 = image69.src;
+  localStorage.setItem("img69", link69);
+}
+
+function handleImageClick70() {
+  var image70 = document.getElementById("img70");
+  var link70 = image70.src;
+  localStorage.setItem("img70", link70);
+}
+
+function handleImageClick71() {
+  var image71 = document.getElementById("img71");
+  var link71 = image71.src;
+  localStorage.setItem("img71", link71);
+}
+
+function handleImageClick72() {
+  var image72 = document.getElementById("img72");
+  var link72 = image72.src;
+  localStorage.setItem("img72", link72);
+}
+
+function handleImageClick73() {
+  var image73 = document.getElementById("img73");
+  var link73 = image73.src;
+  localStorage.setItem("img73", link73);
+}
+
+function handleImageClick74() {
+  var image74 = document.getElementById("img74");
+  var link74 = image74.src;
+  localStorage.setItem("img74", link74);
+}
+
+function handleImageClick75() {
+  var image75 = document.getElementById("img75");
+  var link75 = image75.src;
+  localStorage.setItem("img75", link75);
+}
+
+function handleImageClick76() {
+  var image76 = document.getElementById("img76");
+  var link76 = image76.src;
+  localStorage.setItem("img76", link76);
+}
+
+function handleImageClick77() {
+  var image77 = document.getElementById("img77");
+  var link77 = image77.src;
+  localStorage.setItem("img77", link77);
+}
+
+function handleImageClick78() {
+  var image78 = document.getElementById("img78");
+  var link78 = image78.src;
+  localStorage.setItem("img78", link78);
+}
+
+function handleImageClick79() {
+  var image79 = document.getElementById("img79");
+  var link79 = image79.src;
+  localStorage.setItem("img79", link79);
+}
+
+function handleImageClick80() {
+  var image80 = document.getElementById("img80");
+  var link80 = image80.src;
+  localStorage.setItem("img80", link80);
+}
+
+function handleImageClick81() {
+  var image81 = document.getElementById("img81");
+  var link81 = image81.src;
+  localStorage.setItem("img81", link81);
+}
+
+function handleImageClick82() {
+  var image82 = document.getElementById("img82");
+  var link82 = image82.src;
+  localStorage.setItem("img82", link82);
+}
+
+function handleImageClick83() {
+  var image83 = document.getElementById("img83");
+  var link83 = image83.src;
+  localStorage.setItem("img83", link83);
+}
+
+function handleImageClick84() {
+  var image84 = document.getElementById("img84");
+  var link84 = image84.src;
+  localStorage.setItem("img84", link84);
+}
+
+function handleImageClick85() {
+  var image85 = document.getElementById("img85");
+  var link85 = image85.src;
+  localStorage.setItem("img85", link85);
+}
+
+function handleImageClick86() {
+  var image86 = document.getElementById("img86");
+  var link86 = image86.src;
+  localStorage.setItem("img86", link86);
+}
+
+function handleImageClick87() {
+  var image87 = document.getElementById("img87");
+  var link87 = image87.src;
+  localStorage.setItem("img87", link87);
+}
+
+function handleImageClick88() {
+  var image88 = document.getElementById("img88");
+  var link88 = image88.src;
+  localStorage.setItem("img88", link88);
+}
+
+function handleImageClick89() {
+  var image89 = document.getElementById("img89");
+  var link89 = image89.src;
+  localStorage.setItem("img89", link89);
+}
+
+function handleImageClick90() {
+  var image90 = document.getElementById("img90");
+  var link90 = image90.src;
+  localStorage.setItem("img90", link90);
+}
+
+function handleImageClick91() {
+  var image91 = document.getElementById("img91");
+  var link91 = image91.src;
+  localStorage.setItem("img91", link91);
+}
+
+function handleImageClick92() {
+  var image92 = document.getElementById("img92");
+  var link92 = image92.src;
+  localStorage.setItem("img92", link92);
+}
+
+function handleImageClick93() {
+  var image93 = document.getElementById("img93");
+  var link93 = image93.src;
+  localStorage.setItem("img93", link93);
+}
+
+function handleImageClick94() {
+  var image94 = document.getElementById("img94");
+  var link94 = image94.src;
+  localStorage.setItem("img94", link94);
+}
+
+function handleImageClick95() {
+  var image95 = document.getElementById("img95");
+  var link95 = image95.src;
+  localStorage.setItem("img95", link95);
+}
+
+function handleImageClick96() {
+  var image96 = document.getElementById("img96");
+  var link96 = image96.src;
+  localStorage.setItem("img96", link96);
+}
+
+function handleImageClick97() {
+  var image97 = document.getElementById("img97");
+  var link97 = image97.src;
+  localStorage.setItem("img97", link97);
+}
+
+function handleImageClick98() {
+  var image98 = document.getElementById("img98");
+  var link98 = image98.src;
+  localStorage.setItem("img98", link98);
+}
+
+function handleImageClick99() {
+  var image99 = document.getElementById("img99");
+  var link99 = image99.src;
+  localStorage.setItem("img99", link99);
+}
+
+function handleImageClick100() {
+  var image100 = document.getElementById("img100");
+  var link100 = image100.src;
+  localStorage.setItem("img100", link100);
+}
+function handleImageClick101() {
+  var image101 = document.getElementById("img101");
+  var link101 = image101.src;
+  localStorage.setItem("img101", link101);
+}
+
+function handleImageClick102() {
+  var image102 = document.getElementById("img102");
+  var link102 = image102.src;
+  localStorage.setItem("img102", link102);
+}
+
+function handleImageClick103() {
+  var image103 = document.getElementById("img103");
+  var link103 = image103.src;
+  localStorage.setItem("img103", link103);
+}
+
+function handleImageClick104() {
+  var image104 = document.getElementById("img104");
+  var link104 = image104.src;
+  localStorage.setItem("img104", link104);
+}
+
+function handleImageClick105() {
+  var image105 = document.getElementById("img105");
+  var link105 = image105.src;
+  localStorage.setItem("img105", link105);
+}
+
+function handleImageClick106() {
+  var image106 = document.getElementById("img106");
+  var link106 = image106.src;
+  localStorage.setItem("img106", link106);
+}
+
+function handleImageClick107() {
+  var image107 = document.getElementById("img107");
+  var link107 = image107.src;
+  localStorage.setItem("img107", link107);
+}
+
+function handleImageClick108() {
+  var image108 = document.getElementById("img108");
+  var link108 = image108.src;
+  localStorage.setItem("img108", link108);
+}
+
+function handleImageClick109() {
+  var image109 = document.getElementById("img109");
+  var link109 = image109.src;
+  localStorage.setItem("img109", link109);
+}
+
+function handleImageClick110() {
+  var image110 = document.getElementById("img110");
+  var link110 = image110.src;
+  localStorage.setItem("img110", link110);
+}
+
+function handleImageClick111() {
+  var image111 = document.getElementById("img111");
+  var link111 = image111.src;
+  localStorage.setItem("img111", link111);
+}
+
+function handleImageClick112() {
+  var image112 = document.getElementById("img112");
+  var link112 = image112.src;
+  localStorage.setItem("img112", link112);
+}
+
+function handleImageClick113() {
+  var image113 = document.getElementById("img113");
+  var link113 = image113.src;
+  localStorage.setItem("img113", link113);
+}
+
+function handleImageClick114() {
+  var image114 = document.getElementById("img114");
+  var link114 = image114.src;
+  localStorage.setItem("img114", link114);
+}
+
+function handleImageClick115() {
+  var image115 = document.getElementById("img115");
+  var link115 = image115.src;
+  localStorage.setItem("img115", link115);
+}
+
+function handleImageClick116() {
+  var image116 = document.getElementById("img116");
+  var link116 = image116.src;
+  localStorage.setItem("img116", link116);
+}
+
+function handleImageClick117() {
+  var image117 = document.getElementById("img117");
+  var link117 = image117.src;
+  localStorage.setItem("img117", link117);
+}
+
+function handleImageClick118() {
+  var image118 = document.getElementById("img118");
+  var link118 = image118.src;
+  localStorage.setItem("img118", link118);
+}
+
+function handleImageClick119() {
+  var image119 = document.getElementById("img119");
+  var link119 = image119.src;
+  localStorage.setItem("img119", link119);
+}
+
+function handleImageClick120() {
+  var image120 = document.getElementById("img120");
+  var link120 = image120.src;
+  localStorage.setItem("img120", link120);
+}
+
+function handleImageClick121() {
+  var image121 = document.getElementById("img121");
+  var link121 = image121.src;
+  localStorage.setItem("img121", link121);
+}
+
+function handleImageClick122() {
+  var image122 = document.getElementById("img122");
+  var link122 = image122.src;
+  localStorage.setItem("img122", link122);
+}
+
+function handleImageClick123() {
+  var image123 = document.getElementById("img123");
+  var link123 = image123.src;
+  localStorage.setItem("img123", link123);
+}
+
+function handleImageClick124() {
+  var image124 = document.getElementById("img124");
+  var link124 = image124.src;
+  localStorage.setItem("img124", link124);
+}
+
+function handleImageClick125() {
+  var image125 = document.getElementById("img125");
+  var link125 = image125.src;
+  localStorage.setItem("img125", link125);
+}
+
+function handleImageClick126() {
+  var image126 = document.getElementById("img126");
+  var link126 = image126.src;
+  localStorage.setItem("img126", link126);
+}
+
+function handleImageClick127() {
+  var image127 = document.getElementById("img127");
+  var link127 = image127.src;
+  localStorage.setItem("img127", link127);
+}
+
+function handleImageClick128() {
+  var image128 = document.getElementById("img128");
+  var link128 = image128.src;
+  localStorage.setItem("img128", link128);
+}
+
+function handleImageClick129() {
+  var image129 = document.getElementById("img129");
+  var link129 = image129.src;
+  localStorage.setItem("img129", link129);
+}
+
+function handleImageClick130() {
+  var image130 = document.getElementById("img130");
+  var link130 = image130.src;
+  localStorage.setItem("img130", link130);
+}
+
+function handleImageClick131() {
+  var image131 = document.getElementById("img131");
+  var link131 = image131.src;
+  localStorage.setItem("img131", link131);
+}
+
+function handleImageClick132() {
+  var image132 = document.getElementById("img132");
+  var link132 = image132.src;
+  localStorage.setItem("img132", link132);
+}
+
+function handleImageClick133() {
+  var image133 = document.getElementById("img133");
+  var link133 = image133.src;
+  localStorage.setItem("img133", link133);
+}
+
+function handleImageClick134() {
+  var image134 = document.getElementById("img134");
+  var link134 = image134.src;
+  localStorage.setItem("img134", link134);
+}
+
+function handleImageClick135() {
+  var image135 = document.getElementById("img135");
+  var link135 = image135.src;
+  localStorage.setItem("img135", link135);
+}
+
+function handleImageClick136() {
+  var image136 = document.getElementById("img136");
+  var link136 = image136.src;
+  localStorage.setItem("img136", link136);
+}
+
+function handleImageClick137() {
+  var image137 = document.getElementById("img137");
+  var link137 = image137.src;
+  localStorage.setItem("img137", link137);
+}
+
+function handleImageClick138() {
+  var image138 = document.getElementById("img138");
+  var link138 = image138.src;
+  localStorage.setItem("img138", link138);
+}
+
+function handleImageClick139() {
+  var image139 = document.getElementById("img139");
+  var link139 = image139.src;
+  localStorage.setItem("img139", link139);
+}
+
+function handleImageClick140() {
+  var image140 = document.getElementById("img140");
+  var link140 = image140.src;
+  localStorage.setItem("img140", link140);
+}
+
+function handleImageClick141() {
+  var image141 = document.getElementById("img141");
+  var link141 = image141.src;
+  localStorage.setItem("img141", link141);
+}
+
+function handleImageClick142() {
+  var image142 = document.getElementById("img142");
+  var link142 = image142.src;
+  localStorage.setItem("img142", link142);
+}
+
+function handleImageClick143() {
+  var image143 = document.getElementById("img143");
+  var link143 = image143.src;
+  localStorage.setItem("img143", link143);
+}
+
+function handleImageClick144() {
+  var image144 = document.getElementById("img144");
+  var link144 = image144.src;
+  localStorage.setItem("img144", link144);
+}
+
+function handleImageClick145() {
+  var image145 = document.getElementById("img145");
+  var link145 = image145.src;
+  localStorage.setItem("img145", link145);
+}
+
+function handleImageClick146() {
+  var image146 = document.getElementById("img146");
+  var link146 = image146.src;
+  localStorage.setItem("img146", link146);
+}
+
+function handleImageClick147() {
+  var image147 = document.getElementById("img147");
+  var link147 = image147.src;
+  localStorage.setItem("img147", link147);
+}
+
+function handleImageClick148() {
+  var image148 = document.getElementById("img148");
+  var link148 = image148.src;
+  localStorage.setItem("img148", link148);
+}
+
+function handleImageClick149() {
+  var image149 = document.getElementById("img149");
+  var link149 = image149.src;
+  localStorage.setItem("img149", link149);
+}
+
+function handleImageClick150() {
+  var image150 = document.getElementById("img150");
+  var link150 = image150.src;
+  localStorage.setItem("img150", link150);
+}
+
+function handleImageClick151() {
+  var image151 = document.getElementById("img151");
+  var link151 = image151.src;
+  localStorage.setItem("img151", link151);
+}
+
+function handleImageClick152() {
+  var image152 = document.getElementById("img152");
+  var link152 = image152.src;
+  localStorage.setItem("img152", link152);
+}
+
+function handleImageClick153() {
+  var image153 = document.getElementById("img153");
+  var link153 = image153.src;
+  localStorage.setItem("img153", link153);
+}
+
+function handleImageClick154() {
+  var image154 = document.getElementById("img154");
+  var link154 = image154.src;
+  localStorage.setItem("img154", link154);
+}
+
+function handleImageClick155() {
+  var image155 = document.getElementById("img155");
+  var link155 = image155.src;
+  localStorage.setItem("img155", link155);
+}
+
+function handleImageClick156() {
+  var image156 = document.getElementById("img156");
+  var link156 = image156.src;
+  localStorage.setItem("img156", link156);
+}
+
+function handleImageClick157() {
+  var image157 = document.getElementById("img157");
+  var link157 = image157.src;
+  localStorage.setItem("img157", link157);
+}
+
+function handleImageClick158() {
+  var image158 = document.getElementById("img158");
+  var link158 = image158.src;
+  localStorage.setItem("img158", link158);
+}
+
+function handleImageClick159() {
+  var image159 = document.getElementById("img159");
+  var link159 = image159.src;
+  localStorage.setItem("img159", link159);
+}
+
+function handleImageClick160() {
+  var image160 = document.getElementById("img160");
+  var link160 = image160.src;
+  localStorage.setItem("img160", link160);
+}
+
+function handleImageClick161() {
+  var image161 = document.getElementById("img161");
+  var link161 = image161.src;
+  localStorage.setItem("img161", link161);
+}
+
+function handleImageClick162() {
+  var image162 = document.getElementById("img162");
+  var link162 = image162.src;
+  localStorage.setItem("img162", link162);
+}
+
+function handleImageClick163() {
+  var image163 = document.getElementById("img163");
+  var link163 = image163.src;
+  localStorage.setItem("img163", link163);
+}
+
+function handleImageClick164() {
+  var image164 = document.getElementById("img164");
+  var link164 = image164.src;
+  localStorage.setItem("img164", link164);
+}
+
+function handleImageClick165() {
+  var image165 = document.getElementById("img165");
+  var link165 = image165.src;
+  localStorage.setItem("img165", link165);
+}
+
+function handleImageClick166() {
+  var image166 = document.getElementById("img166");
+  var link166 = image166.src;
+  localStorage.setItem("img166", link166);
+}
+
+function handleImageClick167() {
+  var image167 = document.getElementById("img167");
+  var link167 = image167.src;
+  localStorage.setItem("img167", link167);
+}
+
+function handleImageClick168() {
+  var image168 = document.getElementById("img168");
+  var link168 = image168.src;
+  localStorage.setItem("img168", link168);
+}
+
+function handleImageClick169() {
+  var image169 = document.getElementById("img169");
+  var link169 = image169.src;
+  localStorage.setItem("img169", link169);
+}
+
+function handleImageClick170() {
+  var image170 = document.getElementById("img170");
+  var link170 = image170.src;
+  localStorage.setItem("img170", link170);
+}
+
+function handleImageClick171() {
+  var image171 = document.getElementById("img171");
+  var link171 = image171.src;
+  localStorage.setItem("img171", link171);
+}
+
+function handleImageClick172() {
+  var image172 = document.getElementById("img172");
+  var link172 = image172.src;
+  localStorage.setItem("img172", link172);
+}
+
+function handleImageClick173() {
+  var image173 = document.getElementById("img173");
+  var link173 = image173.src;
+  localStorage.setItem("img173", link173);
+}
+
+function handleImageClick174() {
+  var image174 = document.getElementById("img174");
+  var link174 = image174.src;
+  localStorage.setItem("img174", link174);
+}
+
+function handleImageClick175() {
+  var image175 = document.getElementById("img175");
+  var link175 = image175.src;
+  localStorage.setItem("img175", link175);
+}
+
+function handleImageClick176() {
+  var image176 = document.getElementById("img176");
+  var link176 = image176.src;
+  localStorage.setItem("img176", link176);
+}
+
+function handleImageClick177() {
+  var image177 = document.getElementById("img177");
+  var link177 = image177.src;
+  localStorage.setItem("img177", link177);
+}
+
+function handleImageClick178() {
+  var image178 = document.getElementById("img178");
+  var link178 = image178.src;
+  localStorage.setItem("img178", link178);
+}
+
+function handleImageClick179() {
+  var image179 = document.getElementById("img179");
+  var link179 = image179.src;
+  localStorage.setItem("img179", link179);
+}
+
+function handleImageClick180() {
+  var image180 = document.getElementById("img180");
+  var link180 = image180.src;
+  localStorage.setItem("img180", link180);
+}
+
+function handleImageClick181() {
+  var image181 = document.getElementById("img181");
+  var link181 = image181.src;
+  localStorage.setItem("img181", link181);
+}
+
+function handleImageClick182() {
+  var image182 = document.getElementById("img182");
+  var link182 = image182.src;
+  localStorage.setItem("img182", link182);
+}
+
+function handleImageClick183() {
+  var image183 = document.getElementById("img183");
+  var link183 = image183.src;
+  localStorage.setItem("img183", link183);
+}
+
+function handleImageClick184() {
+  var image184 = document.getElementById("img184");
+  var link184 = image184.src;
+  localStorage.setItem("img184", link184);
+}
+
+function handleImageClick185() {
+  var image185 = document.getElementById("img185");
+  var link185 = image185.src;
+  localStorage.setItem("img185", link185);
+}
+
+function handleImageClick186() {
+  var image186 = document.getElementById("img186");
+  var link186 = image186.src;
+  localStorage.setItem("img186", link186);
+}
+
+function handleImageClick187() {
+  var image187 = document.getElementById("img187");
+  var link187 = image187.src;
+  localStorage.setItem("img187", link187);
+}
+
+function handleImageClick188() {
+  var image188 = document.getElementById("img188");
+  var link188 = image188.src;
+  localStorage.setItem("img188", link188);
+}
+
+function handleImageClick189() {
+  var image189 = document.getElementById("img189");
+  var link189 = image189.src;
+  localStorage.setItem("img189", link189);
+}
+
+function handleImageClick190() {
+  var image190 = document.getElementById("img190");
+  var link190 = image190.src;
+  localStorage.setItem("img190", link190);
+}
+
+function handleImageClick191() {
+  var image191 = document.getElementById("img191");
+  var link191 = image191.src;
+  localStorage.setItem("img191", link191);
+}
+
+function handleImageClick192() {
+  var image192 = document.getElementById("img192");
+  var link192 = image192.src;
+  localStorage.setItem("img192", link192);
+}
+
+function handleImageClick193() {
+  var image193 = document.getElementById("img193");
+  var link193 = image193.src;
+  localStorage.setItem("img193", link193);
+}
+
+function handleImageClick194() {
+  var image194 = document.getElementById("img194");
+  var link194 = image194.src;
+  localStorage.setItem("img194", link194);
+}
+
+function handleImageClick195() {
+  var image195 = document.getElementById("img195");
+  var link195 = image195.src;
+  localStorage.setItem("img195", link195);
+}
+
+function handleImageClick196() {
+  var image196 = document.getElementById("img196");
+  var link196 = image196.src;
+  localStorage.setItem("img196", link196);
+}
+
+function handleImageClick197() {
+  var image197 = document.getElementById("img197");
+  var link197 = image197.src;
+  localStorage.setItem("img197", link197);
+}
+
+function handleImageClick198() {
+  var image198 = document.getElementById("img198");
+  var link198 = image198.src;
+  localStorage.setItem("img198", link198);
+}
+
+function handleImageClick199() {
+  var image199 = document.getElementById("img199");
+  var link199 = image199.src;
+  localStorage.setItem("img199", link199);
+}
+
+function handleImageClick200() {
+  var image200 = document.getElementById("img200");
+  var link200 = image200.src;
+  localStorage.setItem("img200", link200);
+}
+
+function handleImageClick201() {
+  var image201 = document.getElementById("img201");
+  var link201 = image201.src;
+  localStorage.setItem("img201", link201);
+}
+
+function handleImageClick202() {
+  var image202 = document.getElementById("img202");
+  var link202 = image202.src;
+  localStorage.setItem("img202", link202);
+}
+
+function handleImageClick203() {
+  var image203 = document.getElementById("img203");
+  var link203 = image203.src;
+  localStorage.setItem("img203", link203);
+}
+
+function handleImageClick204() {
+  var image204 = document.getElementById("img204");
+  var link204 = image204.src;
+  localStorage.setItem("img204", link204);
+}
+  </script>
+</body>
+</html>
+<!-- bootstrap JS
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> -->
+<!-- <script src="index.js"></script> -->

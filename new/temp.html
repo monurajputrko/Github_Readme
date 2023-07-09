@@ -1,0 +1,1912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://blogger.googleusercontent.com/img/a/AVvXsEhcfsQtlr7F0veFGVdWkGJCPQRWq8eTolEQBGnCCQRVJzk30Vpo1eI-5OK6w15clPtb5aGOMtVGpLp1QGXTN4tH5hrws4y6NAAtYUeSLl2nuNqGMvH6ydDrY4-AzIpdEbsdJ5SJEtBRDHlzM98ZTn00770rAgmXIH3Z7oMzR08UdxtTuKsPLsAU7r5EHEib=w92-h92" type="image/x-icon">
+    <title></title>
+    <style>
+        body {
+            margin-left: 7%;
+            margin-right: -77%;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            background-color: #18181b;
+            color: aliceblue;
+            font-weight: 400;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #dataPlaceholder {
+            width: 50%;
+            border: 2px solid white;
+            padding: 1%;
+        }
+
+        .hidden-image {
+      display: none;
+    }
+    </style>
+</head>
+<body>
+    <h1>Template</h1> <button onclick="downloadFile()">Download File</button>
+    <div class="container">
+        <div class="placeholder" id="dataPlaceholder">
+            <!-- Data stored in local storage will appear here -->
+        </div>
+        <textarea style="width: 0px; height: 0px;" id="fileContent" rows="0" cols="0"></textarea>
+  <br>
+  <!-- <button onclick="insertText()">Insert Text</button> -->
+  <!-- <button onclick="downloadFile()">Download File</button> -->
+    </div>
+    <script>
+
+var authM =localStorage.getItem("Auth");
+      if(authM==null || authM=="" || authM!="Monu Singh"){
+        window.location.href = "LogIn.html";
+      }
+
+         const username = localStorage.getItem("username");
+        const about =localStorage.getItem('aboutYouContent');
+        const trophy =localStorage.getItem('imagestattrop');
+        const visiter =localStorage.getItem('imagestatvisi')
+        const imagestat =localStorage.getItem('imagestat');
+        const imagestat2 =localStorage.getItem('imagestat2');
+        const imagestat3 =localStorage.getItem('imagestat3');
+        // const username =localStorage.getItem('imagestat3'));
+        const name = localStorage.getItem('name');
+        const gif = localStorage.getItem('Gif');
+        const WhatYouDo= localStorage.getItem('WhatYouDo');
+
+        var img1 = localStorage.getItem("img1");
+        var img2 = localStorage.getItem("img2");
+        var img3 = localStorage.getItem("img3");
+        var img4 = localStorage.getItem("img4");
+        var img5 = localStorage.getItem("img5");
+var img6 = localStorage.getItem("img6");
+var img7 = localStorage.getItem("img7");
+var img8 = localStorage.getItem("img8");
+var img9 = localStorage.getItem("img9");
+var img10 = localStorage.getItem("img10");
+var img11 = localStorage.getItem("img11");
+var img12 = localStorage.getItem("img12");
+var img13 = localStorage.getItem("img13");
+var img14 = localStorage.getItem("img14");
+var img15 = localStorage.getItem("img15");
+var img16 = localStorage.getItem("img16");
+var img17 = localStorage.getItem("img17");
+var img18 = localStorage.getItem("img18");
+var img19 = localStorage.getItem("img19");
+var img20 = localStorage.getItem("img20");
+var img21 = localStorage.getItem("img21");
+var img22 = localStorage.getItem("img22");
+var img23 = localStorage.getItem("img23");
+var img24 = localStorage.getItem("img24");
+var img25 = localStorage.getItem("img25");
+var img26 = localStorage.getItem("img26");
+var img27 = localStorage.getItem("img27");
+var img28 = localStorage.getItem("img28");
+var img29 = localStorage.getItem("img29");
+var img30 = localStorage.getItem("img30");
+var img31 = localStorage.getItem("img31");
+var img32 = localStorage.getItem("img32");
+var img33 = localStorage.getItem("img33");
+var img34 = localStorage.getItem("img34");
+var img35 = localStorage.getItem("img35");
+var img36 = localStorage.getItem("img36");
+var img37 = localStorage.getItem("img37");
+var img38 = localStorage.getItem("img38");
+var img39 = localStorage.getItem("img39");
+var img40 = localStorage.getItem("img40");
+var img41 = localStorage.getItem("img41");
+var img42 = localStorage.getItem("img42");
+var img43 = localStorage.getItem("img43");
+var img44 = localStorage.getItem("img44");
+var img45 = localStorage.getItem("img45");
+var img46 = localStorage.getItem("img46");
+var img47 = localStorage.getItem("img47");
+var img48 = localStorage.getItem("img48");
+var img49 = localStorage.getItem("img49");
+var img50 = localStorage.getItem("img50");
+var img51 = localStorage.getItem("img51");
+var img52 = localStorage.getItem("img52");
+var img53 = localStorage.getItem("img53");
+var img54 = localStorage.getItem("img54");
+var img55 = localStorage.getItem("img55");
+var img56 = localStorage.getItem("img56");
+var img57 = localStorage.getItem("img57");
+var img58 = localStorage.getItem("img58");
+var img59 = localStorage.getItem("img59");
+var img60 = localStorage.getItem("img60");
+var img61 = localStorage.getItem("img61");
+var img62 = localStorage.getItem("img62");
+var img63 = localStorage.getItem("img63");
+var img64 = localStorage.getItem("img64");
+var img65 = localStorage.getItem("img65");
+var img66 = localStorage.getItem("img66");
+var img67 = localStorage.getItem("img67");
+var img68 = localStorage.getItem("img68");
+var img69 = localStorage.getItem("img69");
+var img70 = localStorage.getItem("img70");
+var img71 = localStorage.getItem("img71");
+var img72 = localStorage.getItem("img72");
+var img73 = localStorage.getItem("img73");
+var img74 = localStorage.getItem("img74");
+var img75 = localStorage.getItem("img75");
+var img76 = localStorage.getItem("img76");
+var img77 = localStorage.getItem("img77");
+var img78 = localStorage.getItem("img78");
+var img79 = localStorage.getItem("img79");
+var img80 = localStorage.getItem("img80");
+var img81 = localStorage.getItem("img81");
+var img82 = localStorage.getItem("img82");
+var img83 = localStorage.getItem("img83");
+var img84 = localStorage.getItem("img84");
+var img85 = localStorage.getItem("img85");
+var img86 = localStorage.getItem("img86");
+var img87 = localStorage.getItem("img87");
+var img88 = localStorage.getItem("img88");
+var img89 = localStorage.getItem("img89");
+var img90 = localStorage.getItem("img90");
+var img91 = localStorage.getItem("img91");
+var img92 = localStorage.getItem("img92");
+var img93 = localStorage.getItem("img93");
+var img94 = localStorage.getItem("img94");
+var img95 = localStorage.getItem("img95");
+var img96 = localStorage.getItem("img96");
+var img97 = localStorage.getItem("img97");
+var img98 = localStorage.getItem("img98");
+var img99 = localStorage.getItem("img99");
+var img100 = localStorage.getItem("img100");
+var img101 = localStorage.getItem("img101");
+var img102 = localStorage.getItem("img102");
+var img103 = localStorage.getItem("img103");
+var img104 = localStorage.getItem("img104");
+var img105 = localStorage.getItem("img105");
+var img106 = localStorage.getItem("img106");
+var img107 = localStorage.getItem("img107");
+var img108 = localStorage.getItem("img108");
+var img109 = localStorage.getItem("img109");
+var img110 = localStorage.getItem("img110");
+var img111 = localStorage.getItem("img111");
+var img112 = localStorage.getItem("img112");
+var img113 = localStorage.getItem("img113");
+var img114 = localStorage.getItem("img114");
+var img115 = localStorage.getItem("img115");
+var img116 = localStorage.getItem("img116");
+var img117 = localStorage.getItem("img117");
+var img118 = localStorage.getItem("img118");
+var img119 = localStorage.getItem("img119");
+var img120 = localStorage.getItem("img120");
+var img121 = localStorage.getItem("img121");
+var img122 = localStorage.getItem("img122");
+var img123 = localStorage.getItem("img123");
+var img124 = localStorage.getItem("img124");
+var img125 = localStorage.getItem("img125");
+var img126 = localStorage.getItem("img126");
+var img127 = localStorage.getItem("img127");
+var img128 = localStorage.getItem("img128");
+var img129 = localStorage.getItem("img129");
+var img130 = localStorage.getItem("img130");
+var img131 = localStorage.getItem("img131");
+var img132 = localStorage.getItem("img132");
+var img133 = localStorage.getItem("img133");
+var img134 = localStorage.getItem("img134");
+var img135 = localStorage.getItem("img135");
+var img136 = localStorage.getItem("img136");
+var img137 = localStorage.getItem("img137");
+var img138 = localStorage.getItem("img138");
+var img139 = localStorage.getItem("img139");
+var img140 = localStorage.getItem("img140");
+var img141 = localStorage.getItem("img141");
+var img142 = localStorage.getItem("img142");
+var img143 = localStorage.getItem("img143");
+var img144 = localStorage.getItem("img144");
+var img145 = localStorage.getItem("img145");
+var img146 = localStorage.getItem("img146");
+var img147 = localStorage.getItem("img147");
+var img148 = localStorage.getItem("img148");
+var img149 = localStorage.getItem("img149");
+var img150 = localStorage.getItem("img150");
+var img151 = localStorage.getItem("img151");
+var img152 = localStorage.getItem("img152");
+var img153 = localStorage.getItem("img153");
+var img154 = localStorage.getItem("img154");
+var img155 = localStorage.getItem("img155");
+var img156 = localStorage.getItem("img156");
+var img157 = localStorage.getItem("img157");
+var img158 = localStorage.getItem("img158");
+var img159 = localStorage.getItem("img159");
+var img160 = localStorage.getItem("img160");
+var img161 = localStorage.getItem("img161");
+var img162 = localStorage.getItem("img162");
+var img163 = localStorage.getItem("img163");
+var img164 = localStorage.getItem("img164");
+var img165 = localStorage.getItem("img165");
+var img166 = localStorage.getItem("img166");
+var img167 = localStorage.getItem("img167");
+var img168 = localStorage.getItem("img168");
+var img169 = localStorage.getItem("img169");
+var img170 = localStorage.getItem("img170");
+var img171 = localStorage.getItem("img171");
+var img172 = localStorage.getItem("img172");
+var img173 = localStorage.getItem("img173");
+var img174 = localStorage.getItem("img174");
+var img175 = localStorage.getItem("img175");
+var img176 = localStorage.getItem("img176");
+var img177 = localStorage.getItem("img177");
+var img178 = localStorage.getItem("img178");
+var img179 = localStorage.getItem("img179");
+var img180 = localStorage.getItem("img180");
+var img181 = localStorage.getItem("img181");
+var img182 = localStorage.getItem("img182");
+var img183 = localStorage.getItem("img183");
+var img184 = localStorage.getItem("img184");
+var img185 = localStorage.getItem("img185");
+var img186 = localStorage.getItem("img186");
+var img187 = localStorage.getItem("img187");
+var img188 = localStorage.getItem("img188");
+var img189 = localStorage.getItem("img189");
+var img190 = localStorage.getItem("img190");
+var img191 = localStorage.getItem("img191");
+var img192 = localStorage.getItem("img192");
+var img193 = localStorage.getItem("img193");
+var img194 = localStorage.getItem("img194");
+var img195 = localStorage.getItem("img195");
+var img196 = localStorage.getItem("img196");
+var img197 = localStorage.getItem("img197");
+var img198 = localStorage.getItem("img198");
+var img199 = localStorage.getItem("img199");
+var img200 = localStorage.getItem("img200");
+var img201 = localStorage.getItem("img201");
+var img202 = localStorage.getItem("img202");
+var img203 = localStorage.getItem("img203");
+var img204 = localStorage.getItem("img204");
+
+
+ 
+        const linkedin =localStorage.getItem('linkedin');
+        const Portfolio =localStorage.getItem('Portfolio');
+        const instagram =localStorage.getItem('instagram');
+        const Codepen =localStorage.getItem('Codepen');
+        const facebok =localStorage.getItem('facebok');
+        const twitter =localStorage.getItem('twitter');
+//  Get the image element
+ let lin ='none';
+ let ins ='none';
+ let por ='none';
+ let cod ='none';
+ let twi ='none';
+ let fac ='none';
+
+if (linkedin  !== '""') {
+    lin = 'inline-block';
+}
+
+if (facebok  !== '""') {
+    fac = 'inline-block';
+}
+
+if (instagram  !== '""') {
+    ins = 'inline-block';
+}
+
+if (Portfolio  !== '""') {
+    por = 'inline-block';
+}
+
+if (Codepen  !== '""') {
+    cod = 'inline-block';
+}
+
+if (twitter  !== '""') {
+    twi = 'inline-block';
+}
+
+console.log(linkedin)
+console.log(Portfolio)
+console.log(instagram)
+console.log(twitter)
+console.log(facebok)
+console.log(Codepen)
+console.log(twi)
+
+
+        let temp = `<!-- ![Web Devloper]() -->
+            <div align="center">
+                <img src="${gif}" width="100%"/>
+            </div>  
+            <div align="center">
+
+            </div>  
+
+            <div align="center"><h1>I'm ${name}</h1></div> 
+
+            ### <div align="center"><h3>${WhatYouDo}<h3></div>  
+
+            <div align="left">
+                <h4>
+                    ${about}
+                </h4>
+            </div>  
+
+            <br/>  
+
+
+            ## 💻 Tech Stack 
+            <br>
+            <div align="center">
+               <img id="img1" style="margin: 10px" src="${img1}" alt="" height="50" />   
+               <img id="img2" style="margin: 10px" src="${img2}" alt="" height="50" />
+               <img id="img3" style="margin: 10px" src="${img3}" alt="" height="50" />
+               <img id="img4" style="margin: 10px" src="${img4}" alt="" height="50" />
+               <img id="img5" style="margin: 10px" src="${img5}" alt="" height="50" />
+               <img id="img6" style="margin: 10px" src="${img6}" alt="" height="50" />   
+               <img id="img7" style="margin: 10px" src="${img7}" alt="" height="50" />
+               <img id="img8" style="margin: 10px" src="${img8}" alt="" height="50" />
+               <img id="img9" style="margin: 10px" src="${img9}" alt="" height="50" />
+               <img id="img10" style="margin: 10px" src="${img10}" alt="" height="50" /> 
+               <img id="img11" style="margin: 10px" src="${img11}" alt="" height="50" />   
+               <img id="img12" style="margin: 10px" src="${img12}" alt="" height="50" />
+               <img id="img13" style="margin: 10px" src="${img13}" alt="" height="50" />
+               <img id="img14" style="margin: 10px" src="${img14}" alt="" height="50" />
+               <img id="img15" style="margin: 10px" src="${img15}" alt="" height="50" />
+               <img id="img16" style="margin: 10px" src="${img16}" alt="" height="50" />   
+               <img id="img17" style="margin: 10px" src="${img17}" alt="" height="50" />
+               <img id="img18" style="margin: 10px" src="${img18}" alt="" height="50" />
+               <img id="img19" style="margin: 10px" src="${img19}" alt="" height="50" />
+               <img id="img20" style="margin: 10px" src="${img20}" alt="" height="50" />
+               <img id="img21" style="margin: 10px" src="${img21}" alt="" height="50" />   
+               <img id="img22" style="margin: 10px" src="${img22}" alt="" height="50" />
+               <img id="img23" style="margin: 10px" src="${img23}" alt="" height="50" />
+               <img id="img24" style="margin: 10px" src="${img24}" alt="" height="50" />
+               <img id="img25" style="margin: 10px" src="${img25}" alt="" height="50" />
+               <img id="img26" style="margin: 10px" src="${img26}" alt="" height="50" />   
+               <img id="img27" style="margin: 10px" src="${img27}" alt="" height="50" />
+               <img id="img28" style="margin: 10px" src="${img28}" alt="" height="50" />
+               <img id="img29" style="margin: 10px" src="${img29}" alt="" height="50" />
+               <img id="img30" style="margin: 10px" src="${img30}" alt="" height="50" />
+               <img id="img31" style="margin: 10px" src="${img31}" alt="" height="50" />   
+               <img id="img32" style="margin: 10px" src="${img32}" alt="" height="50" />
+               <img id="img33" style="margin: 10px" src="${img33}" alt="" height="50" />
+               <img id="img34" style="margin: 10px" src="${img34}" alt="" height="50" />
+               <img id="img35" style="margin: 10px" src="${img35}" alt="" height="50" />
+               <img id="img36" style="margin: 10px" src="${img36}" alt="" height="50" />   
+               <img id="img37" style="margin: 10px" src="${img37}" alt="" height="50" />
+               <img id="img38" style="margin: 10px" src="${img38}" alt="" height="50" />
+               <img id="img39" style="margin: 10px" src="${img39}" alt="" height="50" />
+               <img id="img40" style="margin: 10px" src="${img40}" alt="" height="50" />  
+               <img id="img41" style="margin: 10px" src="${img41}" alt="" height="50" />   
+               <img id="img42" style="margin: 10px" src="${img42}" alt="" height="50" />
+               <img id="img43" style="margin: 10px" src="${img43}" alt="" height="50" />
+               <img id="img44" style="margin: 10px" src="${img44}" alt="" height="50" />
+               <img id="img45" style="margin: 10px" src="${img45}" alt="" height="50" />
+               <img id="img46" style="margin: 10px" src="${img46}" alt="" height="50" />   
+               <img id="img47" style="margin: 10px" src="${img47}" alt="" height="50" />
+               <img id="img48" style="margin: 10px" src="${img48}" alt="" height="50" />
+               <img id="img49" style="margin: 10px" src="${img49}" alt="" height="50" />
+               <img id="img50" style="margin: 10px" src="${img50}" alt="" height="50" />   
+               <img id="img51" style="margin: 10px" src="${img51}" alt="" height="50" />   
+               <img id="img52" style="margin: 10px" src="${img52}" alt="" height="50" />
+               <img id="img53" style="margin: 10px" src="${img53}" alt="" height="50" />
+               <img id="img54" style="margin: 10px" src="${img54}" alt="" height="50" />
+               <img id="img55" style="margin: 10px" src="${img55}" alt="" height="50" />
+               <img id="img56" style="margin: 10px" src="${img56}" alt="" height="50" />   
+               <img id="img57" style="margin: 10px" src="${img57}" alt="" height="50" />
+               <img id="img58" style="margin: 10px" src="${img58}" alt="" height="50" />
+               <img id="img59" style="margin: 10px" src="${img59}" alt="" height="50" />
+               <img id="img60" style="margin: 10px" src="${img60}" alt="" height="50" /> 
+               <img id="img61" style="margin: 10px" src="${img61}" alt="" height="50" />   
+               <img id="img62" style="margin: 10px" src="${img62}" alt="" height="50" />
+               <img id="img63" style="margin: 10px" src="${img63}" alt="" height="50" />
+               <img id="img64" style="margin: 10px" src="${img64}" alt="" height="50" />
+               <img id="img65" style="margin: 10px" src="${img65}" alt="" height="50" />
+               <img id="img66" style="margin: 10px" src="${img66}" alt="" height="50" />   
+               <img id="img67" style="margin: 10px" src="${img67}" alt="" height="50" />
+               <img id="img68" style="margin: 10px" src="${img68}" alt="" height="50" />
+               <img id="img69" style="margin: 10px" src="${img69}" alt="" height="50" />
+               <img id="img70" style="margin: 10px" src="${img70}" alt="" height="50" />
+               <img id="img71" style="margin: 10px" src="${img71}" alt="" height="50" />   
+               <img id="img72" style="margin: 10px" src="${img72}" alt="" height="50" />
+               <img id="img73" style="margin: 10px" src="${img73}" alt="" height="50" />
+               <img id="img74" style="margin: 10px" src="${img74}" alt="" height="50" />
+               <img id="img75" style="margin: 10px" src="${img75}" alt="" height="50" />
+               <img id="img76" style="margin: 10px" src="${img76}" alt="" height="50" />   
+               <img id="img77" style="margin: 10px" src="${img77}" alt="" height="50" />
+               <img id="img78" style="margin: 10px" src="${img78}" alt="" height="50" />
+               <img id="img79" style="margin: 10px" src="${img79}" alt="" height="50" />
+               <img id="img80" style="margin: 10px" src="${img80}" alt="" height="50" />
+               <img id="img81" style="margin: 10px" src="${img81}" alt="" height="50" />   
+               <img id="img82" style="margin: 10px" src="${img82}" alt="" height="50" />
+               <img id="img83" style="margin: 10px" src="${img83}" alt="" height="50" />
+               <img id="img84" style="margin: 10px" src="${img84}" alt="" height="50" />
+               <img id="img85" style="margin: 10px" src="${img85}" alt="" height="50" />
+               <img id="img86" style="margin: 10px" src="${img86}" alt="" height="50" />   
+               <img id="img87" style="margin: 10px" src="${img87}" alt="" height="50" />
+               <img id="img88" style="margin: 10px" src="${img88}" alt="" height="50" />
+               <img id="img89" style="margin: 10px" src="${img89}" alt="" height="50" />
+               <img id="img90" style="margin: 10px" src="${img90}" alt="" height="50" />
+               <img id="img91" style="margin: 10px" src="${img91}" alt="" height="50" />   
+               <img id="img92" style="margin: 10px" src="${img92}" alt="" height="50" />
+               <img id="img93" style="margin: 10px" src="${img93}" alt="" height="50" />
+               <img id="img94" style="margin: 10px" src="${img94}" alt="" height="50" />
+               <img id="img95" style="margin: 10px" src="${img95}" alt="" height="50" />
+               <img id="img96" style="margin: 10px" src="${img96}" alt="" height="50" />   
+               <img id="img97" style="margin: 10px" src="${img97}" alt="" height="50" />
+               <img id="img98" style="margin: 10px" src="${img98}" alt="" height="50" />
+               <img id="img99" style="margin: 10px" src="${img99}" alt="" height="50" />
+               <img id="img100" style="margin: 10px" src="${img100}" alt="" height="50" /> 
+                
+               <img id="img101" style="margin: 10px" src="${img101}" alt="" height="50" />   
+               <img id="img102" style="margin: 10px" src="${img102}" alt="" height="50" />
+               <img id="img103" style="margin: 10px" src="${img103}" alt="" height="50" />
+               <img id="img104" style="margin: 10px" src="${img104}" alt="" height="50" />
+               <img id="img105" style="margin: 10px" src="${img105}" alt="" height="50" />
+               <img id="img106" style="margin: 10px" src="${img106}" alt="" height="50" />   
+               <img id="img107" style="margin: 10px" src="${img107}" alt="" height="50" />
+               <img id="img108" style="margin: 10px" src="${img108}" alt="" height="50" />
+               <img id="img109" style="margin: 10px" src="${img109}" alt="" height="50" />
+               <img id="img110" style="margin: 10px" src="${img110}" alt="" height="50" /> 
+               <img id="img111" style="margin: 10px" src="${img111}" alt="" height="50" />   
+               <img id="img112" style="margin: 10px" src="${img112}" alt="" height="50" />
+               <img id="img113" style="margin: 10px" src="${img113}" alt="" height="50" />
+               <img id="img114" style="margin: 10px" src="${img114}" alt="" height="50" />
+               <img id="img115" style="margin: 10px" src="${img115}" alt="" height="50" />
+               <img id="img116" style="margin: 10px" src="${img116}" alt="" height="50" />   
+               <img id="img117" style="margin: 10px" src="${img117}" alt="" height="50" />
+               <img id="img118" style="margin: 10px" src="${img118}" alt="" height="50" />
+               <img id="img119" style="margin: 10px" src="${img119}" alt="" height="50" />
+               <img id="img120" style="margin: 10px" src="${img120}" alt="" height="50" />
+               <img id="img121" style="margin: 10px" src="${img121}" alt="" height="50" />   
+               <img id="img122" style="margin: 10px" src="${img122}" alt="" height="50" />
+               <img id="img123" style="margin: 10px" src="${img123}" alt="" height="50" />
+               <img id="img124" style="margin: 10px" src="${img124}" alt="" height="50" />
+               <img id="img125" style="margin: 10px" src="${img125}" alt="" height="50" />
+               <img id="img126" style="margin: 10px" src="${img126}" alt="" height="50" />   
+               <img id="img127" style="margin: 10px" src="${img127}" alt="" height="50" />
+               <img id="img128" style="margin: 10px" src="${img128}" alt="" height="50" />
+               <img id="img129" style="margin: 10px" src="${img129}" alt="" height="50" />
+               <img id="img130" style="margin: 10px" src="${img130}" alt="" height="50" />
+               <img id="img131" style="margin: 10px" src="${img131}" alt="" height="50" />   
+               <img id="img132" style="margin: 10px" src="${img132}" alt="" height="50" />
+               <img id="img133" style="margin: 10px" src="${img133}" alt="" height="50" />
+               <img id="img134" style="margin: 10px" src="${img134}" alt="" height="50" />
+               <img id="img135" style="margin: 10px" src="${img135}" alt="" height="50" />
+               <img id="img136" style="margin: 10px" src="${img136}" alt="" height="50" />   
+               <img id="img137" style="margin: 10px" src="${img137}" alt="" height="50" />
+               <img id="img138" style="margin: 10px" src="${img138}" alt="" height="50" />
+               <img id="img139" style="margin: 10px" src="${img139}" alt="" height="50" />
+               <img id="img140" style="margin: 10px" src="${img140}" alt="" height="50" />  
+               <img id="img141" style="margin: 10px" src="${img141}" alt="" height="50" />   
+               <img id="img142" style="margin: 10px" src="${img142}" alt="" height="50" />
+               <img id="img143" style="margin: 10px" src="${img143}" alt="" height="50" />
+               <img id="img144" style="margin: 10px" src="${img144}" alt="" height="50" />
+               <img id="img145" style="margin: 10px" src="${img145}" alt="" height="50" />
+               <img id="img146" style="margin: 10px" src="${img146}" alt="" height="50" />   
+               <img id="img147" style="margin: 10px" src="${img147}" alt="" height="50" />
+               <img id="img148" style="margin: 10px" src="${img148}" alt="" height="50" />
+               <img id="img149" style="margin: 10px" src="${img149}" alt="" height="50" />
+               <img id="img150" style="margin: 10px" src="${img150}" alt="" height="50" />   
+               <img id="img151" style="margin: 10px" src="${img151}" alt="" height="50" />   
+               <img id="img152" style="margin: 10px" src="${img152}" alt="" height="50" />
+               <img id="img153" style="margin: 10px" src="${img153}" alt="" height="50" />
+               <img id="img154" style="margin: 10px" src="${img154}" alt="" height="50" />
+               <img id="img155" style="margin: 10px" src="${img155}" alt="" height="50" />
+               <img id="img156" style="margin: 10px" src="${img156}" alt="" height="50" />   
+               <img id="img157" style="margin: 10px" src="${img157}" alt="" height="50" />
+               <img id="img158" style="margin: 10px" src="${img158}" alt="" height="50" />
+               <img id="img159" style="margin: 10px" src="${img159}" alt="" height="50" />
+               <img id="img160" style="margin: 10px" src="${img160}" alt="" height="50" /> 
+               <img id="img161" style="margin: 10px" src="${img161}" alt="" height="50" />   
+               <img id="img162" style="margin: 10px" src="${img162}" alt="" height="50" />
+               <img id="img163" style="margin: 10px" src="${img163}" alt="" height="50" />
+               <img id="img164" style="margin: 10px" src="${img164}" alt="" height="50" />
+               <img id="img165" style="margin: 10px" src="${img165}" alt="" height="50" />
+               <img id="img166" style="margin: 10px" src="${img166}" alt="" height="50" />   
+               <img id="img167" style="margin: 10px" src="${img167}" alt="" height="50" />
+               <img id="img168" style="margin: 10px" src="${img168}" alt="" height="50" />
+               <img id="img169" style="margin: 10px" src="${img169}" alt="" height="50" />
+               <img id="img170" style="margin: 10px" src="${img170}" alt="" height="50" />
+               <img id="img171" style="margin: 10px" src="${img171}" alt="" height="50" />   
+               <img id="img172" style="margin: 10px" src="${img172}" alt="" height="50" />
+               <img id="img173" style="margin: 10px" src="${img173}" alt="" height="50" />
+               <img id="img174" style="margin: 10px" src="${img174}" alt="" height="50" />
+               <img id="img175" style="margin: 10px" src="${img175}" alt="" height="50" />
+               <img id="img176" style="margin: 10px" src="${img176}" alt="" height="50" />   
+               <img id="img177" style="margin: 10px" src="${img177}" alt="" height="50" />
+               <img id="img178" style="margin: 10px" src="${img178}" alt="" height="50" />
+               <img id="img179" style="margin: 10px" src="${img179}" alt="" height="50" />
+               <img id="img180" style="margin: 10px" src="${img180}" alt="" height="50" />
+               <img id="img181" style="margin: 10px" src="${img181}" alt="" height="50" />   
+               <img id="img182" style="margin: 10px" src="${img182}" alt="" height="50" />
+               <img id="img183" style="margin: 10px" src="${img183}" alt="" height="50" />
+               <img id="img184" style="margin: 10px" src="${img184}" alt="" height="50" />
+               <img id="img185" style="margin: 10px" src="${img185}" alt="" height="50" />
+               <img id="img186" style="margin: 10px" src="${img186}" alt="" height="50" />   
+               <img id="img187" style="margin: 10px" src="${img187}" alt="" height="50" />
+               <img id="img188" style="margin: 10px" src="${img188}" alt="" height="50" />
+               <img id="img189" style="margin: 10px" src="${img189}" alt="" height="50" />
+               <img id="img190" style="margin: 10px" src="${img190}" alt="" height="50" />
+               <img id="img191" style="margin: 10px" src="${img191}" alt="" height="50" />   
+               <img id="img192" style="margin: 10px" src="${img192}" alt="" height="50" />
+               <img id="img193" style="margin: 10px" src="${img193}" alt="" height="50" />
+               <img id="img194" style="margin: 10px" src="${img194}" alt="" height="50" />
+               <img id="img195" style="margin: 10px" src="${img195}" alt="" height="50" />
+               <img id="img196" style="margin: 10px" src="${img196}" alt="" height="50" />   
+               <img id="img197" style="margin: 10px" src="${img197}" alt="" height="50" />
+               <img id="img198" style="margin: 10px" src="${img198}" alt="" height="50" />
+               <img id="img199" style="margin: 10px" src="${img199}" alt="" height="50" />
+               <img id="img200" style="margin: 10px" src="${img200}" alt="" height="50" />   
+               <img id="img201" style="margin: 10px" src="${img201}" alt="" height="50" />
+               <img id="img202" style="margin: 10px" src="${img202}" alt="" height="50" />
+               <img id="img203" style="margin: 10px" src="${img203}" alt="" height="50" />
+               <img id="img204" style="margin: 10px" src="${img204}" alt="" height="50" />  
+              
+              
+
+            </div>  
+
+
+            <br/>  
+
+
+            ## Connect with me  
+            <br>
+            <div align="center">
+                <a style="display: ${lin}; " id="linkedin" href=${linkedin} target="_blank">
+                    <img style="display: inline-block; height=50px" src=https://img.shields.io/badge/LinkedIn-0A66C2.svg?style=for-the-badge&logo=LinkedIn&logoColor=white alt=linkedin style="margin-bottom: 5px; width: 15%"  />
+                </a>
+                <a style="display: ${fac};" id="facebok" href=${facebok} target="_blank">
+                    <img style="display: inline-block; height=50px" src=https://img.shields.io/badge/Facebook-1877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white alt=facebook style="margin-bottom: 5px; width: 15%" />
+                </a>
+                <a style="display: ${ins};" id="instagram" href=${instagram} target="_blank">
+                    <img style="display: inline-block; height=50px" src=https://img.shields.io/badge/Instagram-E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white alt=instagram style="margin-bottom: 5px; width: 15%" />
+                </a>  
+                <a style="display: ${por};" id="port" href=${Portfolio} target="_blank">
+                    <img style="display: inline-block; height=50px" src=https://camo.githubusercontent.com/a4f6cac3695dcca1a03210fbde4c9ccedb0a2413b1a80d98456d912d325aa85c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f506f7274666f6c696f2d2532333030303030302e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d66697265666f78266c6f676f436f6c6f723d23464637313339 alt=linkedin style="margin-bottom: 5px; width: 15%"  />
+                </a>
+                <a style="display: ${cod};" id="codepen" href=${Codepen} target="_blank">
+                    <img style="display: inline-block; height=50px" src=https://img.shields.io/badge/CodePen-000000.svg?style=for-the-badge&logo=CodePen&logoColor=white alt=facebook style="margin-bottom: 5px; width: 15%" />
+                </a>
+                <a style="display: ${twi};" id="twitter" href=${twitter} target="_blank">
+                    <img style="display: inline-block; height=50px" src=https://img.shields.io/badge/Twitter-1DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white alt=instagram style="margin-bottom: 5px; width: 15%" />
+                </a>  
+            </div>  
+
+
+            <br/>  
+
+
+            ## Github Stats  
+            <div align="center">
+                <img src="${imagestat}" align="center" />
+                <img src="${imagestat2}" align="center" />
+                <br/>
+                <img src="${imagestat3}" align="center" />
+            </div>
+            <br/>
+            <!-- <div align="center"></div>
+            <br/>
+            <div align="center"></div> -->
+            <h2>Github Trophy</h2>
+            <div align="center">
+                <img src="${trophy}" align="center" />
+            </div>
+            <br/>  
+            <h2>✍️ Random Devloper Quote</h2>
+            <div align="center">
+                
+                <img src="https://quotes-github-readme.vercel.app/api?type=vetical&theme=radical" align="center" />
+            </div>
+            <br/>  
+            <h2>🔝 Top Contributed Repo</h2>
+            <div align="center">
+                <img src="https://github-contributor-stats.vercel.app/api?username=${username}&limit=5&theme=radical&combine_all_yearly_contributions=true" align="center" />
+            </div>
+            <br/>  
+
+            <div align="center">
+                <img src="${visiter}" align="center"style="width: 40%" />
+            </div>  
+
+            <h2>😂 Random Dev Meme </h2>
+            <div align="center">
+                <img src="https://miro.medium.com/v2/resize:fit:1400/1*i3sm4Ahbek0zsuctqiORBg.jpeg" width="60%"/>
+            </div>  
+        `;
+
+        const placeholder = document.getElementById("dataPlaceholder");
+        // placeholder.textContent = storedData || "No data available";
+        placeholder.innerHTML = temp;
+
+        function insertText() {
+          // Get the text to insert
+          var textToInsert = "This is the text to insert.";
+    
+          // Get the file content
+          var fileContent = document.getElementById("dataPlaceholder");
+          fileContent.value += textToInsert;
+        }
+        function insertText() {
+      // Get the text to insert
+      var textToInsert = temp;
+
+      // Get the file content
+      var fileContent = document.getElementById("fileContent");
+      fileContent.value += textToInsert;
+    }
+    window.onload = function() {
+        insertText();
+};
+
+
+    function downloadFile() {
+      // Get the file content
+      var fileContent = document.getElementById("fileContent").value;
+
+      // Create a new Blob object with the file content
+      var blob = new Blob([fileContent], { type: "text/plain" });
+
+      // Create a temporary anchor element
+      var a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "Readme.md";
+
+      // Programmatically trigger a click event on the anchor element
+      a.click();
+
+      // Remove the temporary anchor element
+      a.remove();
+
+      localStorage.clear();
+
+      addAuth();
+
+    }
+
+    function addAuth(){
+      localStorage.setItem("Auth","Monu Singh")
+      window.location.href = "index.html"; 
+    }
+
+        // console.log("portfoliy"+Portfolio)
+
+    
+    let imgElement1 = document.getElementById('img1');
+    if (img1 == null) {
+      imgElement1.style.display = 'none';
+    //   console.log("imgHide")
+    }
+   
+    let imgElement2 = document.getElementById('img2');
+    if (img2 == null) {
+      imgElement2.style.display = 'none';
+    //   console.log("imgHide2")
+    }
+
+    let imgElement3 = document.getElementById('img3');
+    if (img3 == null) {
+      imgElement3.style.display = 'none';
+    //   console.log("imgHide2")
+    }
+    
+    let imgElement4 = document.getElementById('img4');
+    if (img4 == null) {
+      imgElement4.style.display = 'none';
+    //   console.log("imgHide4")
+    }
+
+    let imgElement5 = document.getElementById('img5');
+    if (img5 == null) {
+      imgElement5.style.display = 'none';
+    //   console.log("imgHide5")
+    }
+    
+    let imgElement6 = document.getElementById('img6');
+    if (img6 == null) {
+      imgElement6.style.display = 'none';
+    //   console.log("imgHide")
+    }
+   
+    let imgElement7 = document.getElementById('img7');
+    if (img7 == null) {
+      imgElement7.style.display = 'none';
+    //   console.log("imgHide2")
+    }
+
+    let imgElement8 = document.getElementById('img8');
+    if (img8 == null) {
+      imgElement8.style.display = 'none';
+    //   console.log("imgHide2")
+    }
+    
+    let imgElement9 = document.getElementById('img9');
+    if (img9 == null) {
+      imgElement9.style.display = 'none';
+    //   console.log("imgHide4")
+    }
+
+    let imgElement10 = document.getElementById('img10');
+    if (img10 == null) {
+      imgElement10.style.display = 'none';
+    //   console.log("img10")
+    }
+
+    let imgElement11 = document.getElementById('img11');
+    if (img11 == null) {
+      imgElement11.style.display = 'none';
+    //   console.log("img11")
+    }
+
+    let imgElement12 = document.getElementById('img12');
+    if (img12 == null) {
+      imgElement12.style.display = 'none';
+    //   console.log("img12")
+    }
+
+    let imgElement13 = document.getElementById('img13');
+    if (img13 == null) {
+      imgElement13.style.display = 'none';
+    //   console.log("img13")
+    }
+
+    let imgElement14 = document.getElementById('img14');
+    if (img14 == null) {
+      imgElement14.style.display = 'none';
+    //   console.log("img14")
+    }
+
+    let imgElement15 = document.getElementById('img15');
+    if (img15 == null) {
+      imgElement15.style.display = 'none';
+    //   console.log("img15")
+    }
+
+    let imgElement16 = document.getElementById('img16');
+    if (img16 == null) {
+      imgElement16.style.display = 'none';
+    //   console.log("img16")
+    }
+
+    let imgElement17 = document.getElementById('img17');
+    if (img17 == null) {
+      imgElement17.style.display = 'none';
+    //   console.log("img17")
+    }
+
+    let imgElement18 = document.getElementById('img18');
+    if (img18 == null) {
+      imgElement18.style.display = 'none';
+    //   console.log("img18")
+    }
+
+    let imgElement19 = document.getElementById('img19');
+    if (img19 == null) {
+      imgElement19.style.display = 'none';
+    //   console.log("img19")
+    }
+
+    let imgElement20 = document.getElementById('img20');
+    if (img20 == null) {
+      imgElement20.style.display = 'none';
+    //   console.log("img20")
+    }
+
+       let imgElement21 = document.getElementById('img21');
+    if (img21 == null) {
+      imgElement21.style.display = 'none';
+    //   console.log("img21")
+    }
+
+    let imgElement22 = document.getElementById('img22');
+    if (img22 == null) {
+      imgElement22.style.display = 'none';
+    //   console.log("img22")
+    }
+
+    let imgElement23 = document.getElementById('img23');
+    if (img23 == null) {
+      imgElement23.style.display = 'none';
+    //   console.log("img23")
+    }
+
+    let imgElement24 = document.getElementById('img24');
+    if (img24 == null) {
+      imgElement24.style.display = 'none';
+    //   console.log("img24")
+    }
+
+    let imgElement25 = document.getElementById('img25');
+    if (img25 == null) {
+      imgElement25.style.display = 'none';
+    //   console.log("img25")
+    }
+
+    let imgElement26 = document.getElementById('img26');
+    if (img26 == null) {
+      imgElement26.style.display = 'none';
+    //   console.log("img26")
+    }
+
+    let imgElement27 = document.getElementById('img27');
+    if (img27 == null) {
+      imgElement27.style.display = 'none';
+    //   console.log("img27")
+    }
+
+    let imgElement28 = document.getElementById('img28');
+    if (img28 == null) {
+      imgElement28.style.display = 'none';
+    //   console.log("img28")
+    }
+
+    let imgElement29 = document.getElementById('img29');
+    if (img29 == null) {
+      imgElement29.style.display = 'none';
+    //   console.log("img29")
+    }
+
+    let imgElement30 = document.getElementById('img30');
+    if (img30 == null) {
+      imgElement30.style.display = 'none';
+    //   console.log("img30")
+    }
+
+       let imgElement31 = document.getElementById('img31');
+    if (img31 == null) {
+      imgElement31.style.display = 'none';
+    //   console.log("img31")
+    }
+
+    let imgElement32 = document.getElementById('img32');
+    if (img32 == null) {
+      imgElement32.style.display = 'none';
+    //   console.log("img32")
+    }
+
+    let imgElement33 = document.getElementById('img33');
+    if (img33 == null) {
+      imgElement33.style.display = 'none';
+    //   console.log("img33")
+    }
+
+    let imgElement34 = document.getElementById('img34');
+    if (img34 == null) {
+      imgElement34.style.display = 'none';
+    //   console.log("img34")
+    }
+
+    let imgElement35 = document.getElementById('img35');
+    if (img35 == null) {
+      imgElement35.style.display = 'none';
+    //   console.log("img35")
+    }
+
+    let imgElement36 = document.getElementById('img36');
+    if (img36 == null) {
+      imgElement36.style.display = 'none';
+    //   console.log("img36")
+    }
+
+    let imgElement37 = document.getElementById('img37');
+    if (img37 == null) {
+      imgElement37.style.display = 'none';
+    //   console.log("img37")
+    }
+
+    let imgElement38 = document.getElementById('img38');
+    if (img38 == null) {
+      imgElement38.style.display = 'none';
+    //   console.log("img38")
+    }
+
+    let imgElement39 = document.getElementById('img39');
+    if (img39 == null) {
+      imgElement39.style.display = 'none';
+    //   console.log("img39")
+    }
+
+    let imgElement40 = document.getElementById('img40');
+    if (img40 == null) {
+      imgElement40.style.display = 'none';
+    //   console.log("img40")
+    }
+
+       let imgElement41 = document.getElementById('img41');
+    if (img41 == null) {
+      imgElement41.style.display = 'none';
+    //   console.log("img41")
+    }
+
+    let imgElement42 = document.getElementById('img42');
+    if (img42 == null) {
+      imgElement42.style.display = 'none';
+    //   console.log("img42")
+    }
+
+    let imgElement43 = document.getElementById('img43');
+    if (img43 == null) {
+      imgElement43.style.display = 'none';
+    //   console.log("img43")
+    }
+
+    let imgElement44 = document.getElementById('img44');
+    if (img44 == null) {
+      imgElement44.style.display = 'none';
+    //   console.log("img44")
+    }
+
+    let imgElement45 = document.getElementById('img45');
+    if (img45 == null) {
+      imgElement45.style.display = 'none';
+    //   console.log("img45")
+    }
+
+    let imgElement46 = document.getElementById('img46');
+    if (img46 == null) {
+      imgElement46.style.display = 'none';
+    //   console.log("img46")
+    }
+
+    let imgElement47 = document.getElementById('img47');
+    if (img47 == null) {
+      imgElement47.style.display = 'none';
+    //   console.log("img47")
+    }
+
+    let imgElement48 = document.getElementById('img48');
+    if (img48 == null) {
+      imgElement48.style.display = 'none';
+    //   console.log("img48")
+    }
+
+    let imgElement49 = document.getElementById('img49');
+    if (img49 == null) {
+      imgElement49.style.display = 'none';
+    //   console.log("img49")
+    }
+
+    let imgElement50 = document.getElementById('img50');
+    if (img50 == null) {
+      imgElement50.style.display = 'none';
+    //   console.log("img50")
+    }
+
+       let imgElement51 = document.getElementById('img51');
+    if (img51 == null) {
+      imgElement51.style.display = 'none';
+    //   console.log("img51")
+    }
+
+    let imgElement52 = document.getElementById('img52');
+    if (img52 == null) {
+      imgElement52.style.display = 'none';
+    //   console.log("img52")
+    }
+
+    let imgElement53 = document.getElementById('img53');
+    if (img53 == null) {
+      imgElement53.style.display = 'none';
+    //   console.log("img53")
+    }
+
+    let imgElement54 = document.getElementById('img54');
+    if (img54 == null) {
+      imgElement54.style.display = 'none';
+    //   console.log("img54")
+    }
+
+    let imgElement55 = document.getElementById('img55');
+    if (img55 == null) {
+      imgElement55.style.display = 'none';
+    //   console.log("img55")
+    }
+
+    let imgElement56 = document.getElementById('img56');
+    if (img56 == null) {
+      imgElement56.style.display = 'none';
+    //   console.log("img56")
+    }
+
+    let imgElement57 = document.getElementById('img57');
+    if (img57 == null) {
+      imgElement57.style.display = 'none';
+    //   console.log("img57")
+    }
+
+    let imgElement58 = document.getElementById('img58');
+    if (img58 == null) {
+      imgElement58.style.display = 'none';
+    //   console.log("img58")
+    }
+
+    let imgElement59 = document.getElementById('img59');
+    if (img59 == null) {
+      imgElement59.style.display = 'none';
+    //   console.log("img59")
+    }
+
+    let imgElement60 = document.getElementById('img60');
+    if (img60 == null) {
+      imgElement60.style.display = 'none';
+    //   console.log("img60")
+    }
+
+       let imgElement61 = document.getElementById('img61');
+    if (img61 == null) {
+      imgElement61.style.display = 'none';
+    //   console.log("img61")
+    }
+
+    let imgElement62 = document.getElementById('img62');
+    if (img62 == null) {
+      imgElement62.style.display = 'none';
+    //   console.log("img62")
+    }
+
+    let imgElement63 = document.getElementById('img63');
+    if (img63 == null) {
+      imgElement63.style.display = 'none';
+    //   console.log("img63")
+    }
+
+    let imgElement64 = document.getElementById('img64');
+    if (img64 == null) {
+      imgElement64.style.display = 'none';
+    //   console.log("img64")
+    }
+
+    let imgElement65 = document.getElementById('img65');
+    if (img65 == null) {
+      imgElement65.style.display = 'none';
+    //   console.log("img65")
+    }
+
+    let imgElement66 = document.getElementById('img66');
+    if (img66 == null) {
+      imgElement66.style.display = 'none';
+    //   console.log("img66")
+    }
+
+    let imgElement67 = document.getElementById('img67');
+    if (img67 == null) {
+      imgElement67.style.display = 'none';
+    //   console.log("img67")
+    }
+
+    let imgElement68 = document.getElementById('img68');
+    if (img68 == null) {
+      imgElement68.style.display = 'none';
+    //   console.log("img68")
+    }
+
+    let imgElement69 = document.getElementById('img69');
+    if (img69 == null) {
+      imgElement69.style.display = 'none';
+    //   console.log("img69")
+    }
+
+    let imgElement70 = document.getElementById('img70');
+    if (img70 == null) {
+      imgElement70.style.display = 'none';
+    //   console.log("img70")
+    }
+
+       let imgElement71 = document.getElementById('img71');
+    if (img71 == null) {
+      imgElement71.style.display = 'none';
+    //   console.log("img71")
+    }
+
+    let imgElement72 = document.getElementById('img72');
+    if (img72 == null) {
+      imgElement72.style.display = 'none';
+    //   console.log("img72")
+    }
+
+    let imgElement73 = document.getElementById('img73');
+    if (img73 == null) {
+      imgElement73.style.display = 'none';
+    //   console.log("img73")
+    }
+
+    let imgElement74 = document.getElementById('img74');
+    if (img74 == null) {
+      imgElement74.style.display = 'none';
+    //   console.log("img74")
+    }
+
+    let imgElement75 = document.getElementById('img75');
+    if (img75 == null) {
+      imgElement75.style.display = 'none';
+    //   console.log("img75")
+    }
+
+    let imgElement76 = document.getElementById('img76');
+    if (img76 == null) {
+      imgElement76.style.display = 'none';
+    //   console.log("img76")
+    }
+
+    let imgElement77 = document.getElementById('img77');
+    if (img77 == null) {
+      imgElement77.style.display = 'none';
+    //   console.log("img77")
+    }
+
+    let imgElement78 = document.getElementById('img78');
+    if (img78 == null) {
+      imgElement78.style.display = 'none';
+    //   console.log("img78")
+    }
+
+    let imgElement79 = document.getElementById('img79');
+    if (img79 == null) {
+      imgElement79.style.display = 'none';
+    //   console.log("img79")
+    }
+
+    let imgElement80 = document.getElementById('img80');
+    if (img80 == null) {
+      imgElement80.style.display = 'none';
+    //   console.log("img80")
+    }
+
+       let imgElement81 = document.getElementById('img81');
+    if (img81 == null) {
+      imgElement81.style.display = 'none';
+    //   console.log("img81")
+    }
+
+    let imgElement82 = document.getElementById('img82');
+    if (img82 == null) {
+      imgElement82.style.display = 'none';
+    //   console.log("img82")
+    }
+
+    let imgElement83 = document.getElementById('img83');
+    if (img83 == null) {
+      imgElement83.style.display = 'none';
+    //   console.log("img83")
+    }
+
+    let imgElement84 = document.getElementById('img84');
+    if (img84 == null) {
+      imgElement84.style.display = 'none';
+    //   console.log("img84")
+    }
+
+    let imgElement85 = document.getElementById('img85');
+    if (img85 == null) {
+      imgElement85.style.display = 'none';
+    //   console.log("img85")
+    }
+
+    let imgElement86 = document.getElementById('img86');
+    if (img86 == null) {
+      imgElement86.style.display = 'none';
+    //   console.log("img86")
+    }
+
+    let imgElement87 = document.getElementById('img87');
+    if (img87 == null) {
+      imgElement87.style.display = 'none';
+    //   console.log("img87")
+    }
+
+    let imgElement88 = document.getElementById('img88');
+    if (img88 == null) {
+      imgElement88.style.display = 'none';
+    //   console.log("img88")
+    }
+
+    let imgElement89 = document.getElementById('img89');
+    if (img89 == null) {
+      imgElement89.style.display = 'none';
+    //   console.log("img89")
+    }
+
+    let imgElement90 = document.getElementById('img90');
+    if (img90 == null) {
+      imgElement90.style.display = 'none';
+    //   console.log("img90")
+    }
+
+       let imgElement91 = document.getElementById('img91');
+    if (img91 == null) {
+      imgElement91.style.display = 'none';
+    //   console.log("img91")
+    }
+
+    let imgElement92 = document.getElementById('img92');
+    if (img92 == null) {
+      imgElement92.style.display = 'none';
+    //   console.log("img92")
+    }
+
+    let imgElement93 = document.getElementById('img93');
+    if (img93 == null) {
+      imgElement93.style.display = 'none';
+    //   console.log("img93")
+    }
+
+    let imgElement94 = document.getElementById('img94');
+    if (img94 == null) {
+      imgElement94.style.display = 'none';
+    //   console.log("img94")
+    }
+
+    let imgElement95 = document.getElementById('img95');
+    if (img95 == null) {
+      imgElement95.style.display = 'none';
+    //   console.log("img95")
+    }
+
+    let imgElement96 = document.getElementById('img96');
+    if (img96 == null) {
+      imgElement96.style.display = 'none';
+    //   console.log("img96")
+    }
+
+    let imgElement97 = document.getElementById('img97');
+    if (img97 == null) {
+      imgElement97.style.display = 'none';
+    //   console.log("img97")
+    }
+
+    let imgElement98 = document.getElementById('img98');
+    if (img98 == null) {
+      imgElement98.style.display = 'none';
+    //   console.log("img98")
+    }
+
+    let imgElement99 = document.getElementById('img99');
+    if (img99 == null) {
+      imgElement99.style.display = 'none';
+    //   console.log("img99")
+    }
+
+    let imgElement100 = document.getElementById('img100');
+    if (img100 == null) {
+      imgElement100.style.display = 'none';
+    //   console.log("img100")
+    }
+
+
+    
+    let imgElement111 = document.getElementById('img111');
+    if (img111 == null) {
+      imgElement111.style.display = 'none';
+    //   console.log("img111")
+    }
+
+    let imgElement112 = document.getElementById('img112');
+    if (img112 == null) {
+      imgElement112.style.display = 'none';
+    //   console.log("img112")
+    }
+
+    let imgElement113 = document.getElementById('img113');
+    if (img113 == null) {
+      imgElement113.style.display = 'none';
+    //   console.log("img113")
+    }
+
+    let imgElement114 = document.getElementById('img114');
+    if (img114 == null) {
+      imgElement114.style.display = 'none';
+    //   console.log("img114")
+    }
+
+    let imgElement115 = document.getElementById('img115');
+    if (img115 == null) {
+      imgElement115.style.display = 'none';
+    //   console.log("img115")
+    }
+
+    let imgElement116 = document.getElementById('img116');
+    if (img116 == null) {
+      imgElement116.style.display = 'none';
+    //   console.log("img116")
+    }
+
+    let imgElement117 = document.getElementById('img117');
+    if (img117 == null) {
+      imgElement117.style.display = 'none';
+    //   console.log("img117")
+    }
+
+    let imgElement118 = document.getElementById('img118');
+    if (img118 == null) {
+      imgElement118.style.display = 'none';
+    //   console.log("img118")
+    }
+
+    let imgElement119 = document.getElementById('img119');
+    if (img119 == null) {
+      imgElement119.style.display = 'none';
+    //   console.log("img119")
+    }
+
+    let imgElement120 = document.getElementById('img120');
+    if (img120 == null) {
+      imgElement120.style.display = 'none';
+    //   console.log("img120")
+    }
+
+       let imgElement121 = document.getElementById('img121');
+    if (img121 == null) {
+      imgElement121.style.display = 'none';
+    //   console.log("img121")
+    }
+
+    let imgElement122 = document.getElementById('img122');
+    if (img122 == null) {
+      imgElement122.style.display = 'none';
+    //   console.log("img122")
+    }
+
+    let imgElement123 = document.getElementById('img123');
+    if (img123 == null) {
+      imgElement123.style.display = 'none';
+    //   console.log("img123")
+    }
+
+    let imgElement124 = document.getElementById('img124');
+    if (img124 == null) {
+      imgElement124.style.display = 'none';
+    //   console.log("img124")
+    }
+
+    let imgElement125 = document.getElementById('img125');
+    if (img125 == null) {
+      imgElement125.style.display = 'none';
+    //   console.log("img125")
+    }
+
+    let imgElement126 = document.getElementById('img126');
+    if (img126 == null) {
+      imgElement126.style.display = 'none';
+    //   console.log("img126")
+    }
+
+    let imgElement127 = document.getElementById('img127');
+    if (img127 == null) {
+      imgElement127.style.display = 'none';
+    //   console.log("img127")
+    }
+
+    let imgElement128 = document.getElementById('img128');
+    if (img128 == null) {
+      imgElement128.style.display = 'none';
+    //   console.log("img128")
+    }
+
+    let imgElement129 = document.getElementById('img129');
+    if (img129 == null) {
+      imgElement129.style.display = 'none';
+    //   console.log("img129")
+    }
+
+    let imgElement130 = document.getElementById('img130');
+    if (img130 == null) {
+      imgElement130.style.display = 'none';
+    //   console.log("img130")
+    }
+
+       let imgElement131 = document.getElementById('img131');
+    if (img131 == null) {
+      imgElement131.style.display = 'none';
+    //   console.log("img131")
+    }
+
+    let imgElement132 = document.getElementById('img132');
+    if (img132 == null) {
+      imgElement132.style.display = 'none';
+    //   console.log("img132")
+    }
+
+    let imgElement133 = document.getElementById('img133');
+    if (img133 == null) {
+      imgElement133.style.display = 'none';
+    //   console.log("img133")
+    }
+
+    let imgElement134 = document.getElementById('img134');
+    if (img134 == null) {
+      imgElement134.style.display = 'none';
+    //   console.log("img134")
+    }
+
+    let imgElement135 = document.getElementById('img135');
+    if (img135 == null) {
+      imgElement135.style.display = 'none';
+    //   console.log("img135")
+    }
+
+    let imgElement136 = document.getElementById('img136');
+    if (img136 == null) {
+      imgElement136.style.display = 'none';
+    //   console.log("img136")
+    }
+
+    let imgElement137 = document.getElementById('img137');
+    if (img137 == null) {
+      imgElement137.style.display = 'none';
+    //   console.log("img137")
+    }
+
+    let imgElement138 = document.getElementById('img138');
+    if (img138 == null) {
+      imgElement138.style.display = 'none';
+    //   console.log("img138")
+    }
+
+    let imgElement139 = document.getElementById('img139');
+    if (img139 == null) {
+      imgElement139.style.display = 'none';
+    //   console.log("img139")
+    }
+
+    let imgElement140 = document.getElementById('img140');
+    if (img140 == null) {
+      imgElement140.style.display = 'none';
+    //   console.log("img140")
+    }
+
+       let imgElement141 = document.getElementById('img141');
+    if (img141 == null) {
+      imgElement141.style.display = 'none';
+    //   console.log("img141")
+    }
+
+    let imgElement142 = document.getElementById('img142');
+    if (img142 == null) {
+      imgElement142.style.display = 'none';
+    //   console.log("img142")
+    }
+
+    let imgElement143 = document.getElementById('img143');
+    if (img143 == null) {
+      imgElement143.style.display = 'none';
+    //   console.log("img143")
+    }
+
+    let imgElement144 = document.getElementById('img144');
+    if (img144 == null) {
+      imgElement144.style.display = 'none';
+    //   console.log("img144")
+    }
+
+    let imgElement145 = document.getElementById('img145');
+    if (img145 == null) {
+      imgElement145.style.display = 'none';
+    //   console.log("img145")
+    }
+
+    let imgElement146 = document.getElementById('img146');
+    if (img146 == null) {
+      imgElement146.style.display = 'none';
+    //   console.log("img146")
+    }
+
+    let imgElement147 = document.getElementById('img147');
+    if (img147 == null) {
+      imgElement147.style.display = 'none';
+    //   console.log("img147")
+    }
+
+    let imgElement148 = document.getElementById('img148');
+    if (img148 == null) {
+      imgElement148.style.display = 'none';
+    //   console.log("img148")
+    }
+
+    let imgElement149 = document.getElementById('img149');
+    if (img149 == null) {
+      imgElement149.style.display = 'none';
+    //   console.log("img149")
+    }
+
+    let imgElement150 = document.getElementById('img150');
+    if (img150 == null) {
+      imgElement150.style.display = 'none';
+    //   console.log("img150")
+    }
+
+       let imgElement151 = document.getElementById('img151');
+    if (img151 == null) {
+      imgElement151.style.display = 'none';
+    //   console.log("img151")
+    }
+
+    let imgElement152 = document.getElementById('img152');
+    if (img152 == null) {
+      imgElement152.style.display = 'none';
+    //   console.log("img152")
+    }
+
+    let imgElement153 = document.getElementById('img153');
+    if (img153 == null) {
+      imgElement153.style.display = 'none';
+    //   console.log("img153")
+    }
+
+    let imgElement154 = document.getElementById('img154');
+    if (img154 == null) {
+      imgElement154.style.display = 'none';
+    //   console.log("img154")
+    }
+
+    let imgElement155 = document.getElementById('img155');
+    if (img155 == null) {
+      imgElement155.style.display = 'none';
+    //   console.log("img155")
+    }
+
+    let imgElement156 = document.getElementById('img156');
+    if (img156 == null) {
+      imgElement156.style.display = 'none';
+    //   console.log("img156")
+    }
+
+    let imgElement157 = document.getElementById('img157');
+    if (img157 == null) {
+      imgElement157.style.display = 'none';
+    //   console.log("img157")
+    }
+
+    let imgElement158 = document.getElementById('img158');
+    if (img158 == null) {
+      imgElement158.style.display = 'none';
+    //   console.log("img158")
+    }
+
+    let imgElement159 = document.getElementById('img159');
+    if (img159 == null) {
+      imgElement159.style.display = 'none';
+    //   console.log("img159")
+    }
+
+    let imgElement160 = document.getElementById('img160');
+    if (img160 == null) {
+      imgElement160.style.display = 'none';
+    //   console.log("img160")
+    }
+
+       let imgElement161 = document.getElementById('img161');
+    if (img161 == null) {
+      imgElement161.style.display = 'none';
+    //   console.log("img161")
+    }
+
+    let imgElement162 = document.getElementById('img162');
+    if (img162 == null) {
+      imgElement162.style.display = 'none';
+    //   console.log("img162")
+    }
+
+    let imgElement163 = document.getElementById('img163');
+    if (img163 == null) {
+      imgElement163.style.display = 'none';
+    //   console.log("img163")
+    }
+
+    let imgElement164 = document.getElementById('img164');
+    if (img164 == null) {
+      imgElement164.style.display = 'none';
+    //   console.log("img164")
+    }
+
+    let imgElement165 = document.getElementById('img165');
+    if (img165 == null) {
+      imgElement165.style.display = 'none';
+    //   console.log("img165")
+    }
+
+    let imgElement166 = document.getElementById('img166');
+    if (img166 == null) {
+      imgElement166.style.display = 'none';
+    //   console.log("img166")
+    }
+
+    let imgElement167 = document.getElementById('img167');
+    if (img167 == null) {
+      imgElement167.style.display = 'none';
+    //   console.log("img167")
+    }
+
+    let imgElement168 = document.getElementById('img168');
+    if (img168 == null) {
+      imgElement168.style.display = 'none';
+    //   console.log("img168")
+    }
+
+    let imgElement169 = document.getElementById('img169');
+    if (img169 == null) {
+      imgElement169.style.display = 'none';
+    //   console.log("img169")
+    }
+
+    let imgElement170 = document.getElementById('img170');
+    if (img170 == null) {
+      imgElement170.style.display = 'none';
+    //   console.log("img170")
+    }
+
+       let imgElement171 = document.getElementById('img171');
+    if (img171 == null) {
+      imgElement171.style.display = 'none';
+    //   console.log("img171")
+    }
+
+    let imgElement172 = document.getElementById('img172');
+    if (img172 == null) {
+      imgElement172.style.display = 'none';
+    //   console.log("img172")
+    }
+
+    let imgElement173 = document.getElementById('img173');
+    if (img173 == null) {
+      imgElement173.style.display = 'none';
+    //   console.log("img173")
+    }
+
+    let imgElement174 = document.getElementById('img174');
+    if (img174 == null) {
+      imgElement174.style.display = 'none';
+    //   console.log("img174")
+    }
+
+    let imgElement175 = document.getElementById('img175');
+    if (img175 == null) {
+      imgElement175.style.display = 'none';
+    //   console.log("img175")
+    }
+
+    let imgElement176 = document.getElementById('img176');
+    if (img176 == null) {
+      imgElement176.style.display = 'none';
+    //   console.log("img176")
+    }
+
+    let imgElement177 = document.getElementById('img177');
+    if (img177 == null) {
+      imgElement177.style.display = 'none';
+    //   console.log("img177")
+    }
+
+    let imgElement178 = document.getElementById('img178');
+    if (img178 == null) {
+      imgElement178.style.display = 'none';
+    //   console.log("img178")
+    }
+
+    let imgElement179 = document.getElementById('img179');
+    if (img179 == null) {
+      imgElement179.style.display = 'none';
+    //   console.log("img179")
+    }
+
+    let imgElement180 = document.getElementById('img180');
+    if (img180 == null) {
+      imgElement180.style.display = 'none';
+    //   console.log("img180")
+    }
+
+       let imgElement181 = document.getElementById('img181');
+    if (img181 == null) {
+      imgElement181.style.display = 'none';
+    //   console.log("img181")
+    }
+
+    let imgElement182 = document.getElementById('img182');
+    if (img182 == null) {
+      imgElement182.style.display = 'none';
+    //   console.log("img182")
+    }
+
+    let imgElement183 = document.getElementById('img183');
+    if (img183 == null) {
+      imgElement183.style.display = 'none';
+    //   console.log("img183")
+    }
+
+    let imgElement184 = document.getElementById('img184');
+    if (img184 == null) {
+      imgElement184.style.display = 'none';
+    //   console.log("img184")
+    }
+
+    let imgElement185 = document.getElementById('img185');
+    if (img185 == null) {
+      imgElement185.style.display = 'none';
+    //   console.log("img185")
+    }
+
+    let imgElement186 = document.getElementById('img186');
+    if (img186 == null) {
+      imgElement186.style.display = 'none';
+    //   console.log("img186")
+    }
+
+    let imgElement187 = document.getElementById('img187');
+    if (img187 == null) {
+      imgElement187.style.display = 'none';
+    //   console.log("img187")
+    }
+
+    let imgElement188 = document.getElementById('img188');
+    if (img188 == null) {
+      imgElement188.style.display = 'none';
+    //   console.log("img188")
+    }
+
+    let imgElement189 = document.getElementById('img189');
+    if (img189 == null) {
+      imgElement189.style.display = 'none';
+    //   console.log("img189")
+    }
+
+    let imgElement190 = document.getElementById('img190');
+    if (img190 == null) {
+      imgElement190.style.display = 'none';
+    //   console.log("img190")
+    }
+
+       let imgElement191 = document.getElementById('img191');
+    if (img191 == null) {
+      imgElement191.style.display = 'none';
+    //   console.log("img191")
+    }
+
+    let imgElement192 = document.getElementById('img192');
+    if (img192 == null) {
+      imgElement192.style.display = 'none';
+    //   console.log("img192")
+    }
+
+    let imgElement193 = document.getElementById('img193');
+    if (img193 == null) {
+      imgElement193.style.display = 'none';
+    //   console.log("img193")
+    }
+
+    let imgElement194 = document.getElementById('img194');
+    if (img194 == null) {
+      imgElement194.style.display = 'none';
+    //   console.log("img194")
+    }
+
+    let imgElement195 = document.getElementById('img195');
+    if (img195 == null) {
+      imgElement195.style.display = 'none';
+    //   console.log("img195")
+    }
+
+    let imgElement196 = document.getElementById('img196');
+    if (img196 == null) {
+      imgElement196.style.display = 'none';
+    //   console.log("img196")
+    }
+
+    let imgElement197 = document.getElementById('img197');
+    if (img197 == null) {
+      imgElement197.style.display = 'none';
+    //   console.log("img197")
+    }
+
+    let imgElement198 = document.getElementById('img198');
+    if (img198 == null) {
+      imgElement198.style.display = 'none';
+    //   console.log("img198")
+    }
+
+    let imgElement199 = document.getElementById('img199');
+    if (img199 == null) {
+      imgElement199.style.display = 'none';
+    //   console.log("img199")
+    }
+
+    let imgElement200 = document.getElementById('img200');
+    if (img200 == null) {
+      imgElement200.style.display = 'none';
+    //   console.log("img200")
+    }
+
+       let imgElement101 = document.getElementById('img101');
+    if (img101 == null) {
+      imgElement101.style.display = 'none';
+    //   console.log("img101")
+    }
+
+    let imgElement102 = document.getElementById('img102');
+    if (img102 == null) {
+      imgElement102.style.display = 'none';
+    //   console.log("img102")
+    }
+
+    let imgElement103 = document.getElementById('img103');
+    if (img103 == null) {
+      imgElement103.style.display = 'none';
+    //   console.log("img103")
+    }
+
+    let imgElement104 = document.getElementById('img104');
+    if (img104 == null) {
+      imgElement104.style.display = 'none';
+    //   console.log("img104")
+    }
+
+    let imgElement105 = document.getElementById('img105');
+    if (img105 == null) {
+      imgElement105.style.display = 'none';
+    //   console.log("img105")
+    }
+
+    let imgElement106 = document.getElementById('img106');
+    if (img106 == null) {
+      imgElement106.style.display = 'none';
+    //   console.log("img106")
+    }
+
+    let imgElement107 = document.getElementById('img107');
+    if (img107 == null) {
+      imgElement107.style.display = 'none';
+    //   console.log("img107")
+    }
+
+    let imgElement108 = document.getElementById('img108');
+    if (img108 == null) {
+      imgElement108.style.display = 'none';
+    //   console.log("img108")
+    }
+
+    let imgElement109 = document.getElementById('img109');
+    if (img109 == null) {
+      imgElement109.style.display = 'none';
+    //   console.log("img109")
+    }
+
+    let imgElement110 = document.getElementById('img110');
+    if (img110 == null) {
+      imgElement110.style.display = 'none';
+    //   console.log("img110")
+    }
+
+    let imgElement201 = document.getElementById('img201');
+    if (img201 == null) {
+      imgElement201.style.display = 'none';
+    //   console.log("img201")
+    }
+
+    let imgElement202 = document.getElementById('img202');
+    if (img202 == null) {
+      imgElement202.style.display = 'none';
+    //   console.log("img202")
+    }
+
+    let imgElement203 = document.getElementById('img203');
+    if (img203 == null) {
+      imgElement203.style.display = 'none';
+    //   console.log("img203")
+    }
+
+    let imgElement204 = document.getElementById('img204');
+    if (img204 == null) {
+      imgElement204.style.display = 'none';
+    //   console.log("img204")
+    }
+
+
+
+    // let imgElement10 = document.getElementById('img10');
+    // if (img10 == null) {
+    //   imgElement10.style.display = 'none';
+    //   console.log("img10")
+    // }
+
+    </script>
+ 
+</body>
+</html>

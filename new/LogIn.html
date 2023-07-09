@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://blogger.googleusercontent.com/img/a/AVvXsEhcfsQtlr7F0veFGVdWkGJCPQRWq8eTolEQBGnCCQRVJzk30Vpo1eI-5OK6w15clPtb5aGOMtVGpLp1QGXTN4tH5hrws4y6NAAtYUeSLl2nuNqGMvH6ydDrY4-AzIpdEbsdJ5SJEtBRDHlzM98ZTn00770rAgmXIH3Z7oMzR08UdxtTuKsPLsAU7r5EHEib=w92-h92" type="image/x-icon">
+    <title>Log In</title>
+    <style>
+        body {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 50px;
+}
+
+.login-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+}
+.navbar {
+        background-color: #f8f8f8;
+        padding: 10px;
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+      }
+      /* 
+      ul{
+          float: left;
+      } */
+      
+      .navbar-brand a {
+        font-weight: bold;
+        color: #333;
+        text-decoration: none;
+      }
+      
+      .navbar-toggle-label {
+        display: none;
+        cursor: pointer;
+      }
+      
+      .navbar-toggle-label span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin-bottom: 5px;
+      }
+      
+      .navbar-menu {
+        list-style: none;
+        display: flex;
+      }
+      
+      .navbar-menu li {
+        margin-right: 10px;
+      }
+      
+      .navbar-menu li a {
+        color: #333;
+        text-decoration: none;
+        padding: 5px;
+      }
+    </style>
+       <style>
+        .login-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 400px;
+      padding: 40px;
+      transform: translate(-50%, -50%);
+      background: rgba(24, 20, 20, 0.987);
+      box-sizing: border-box;
+      box-shadow: 0 15px 25px rgba(0,0,0,.6);
+      border-radius: 10px;
+    }
+    .login-boxm {
+        position: absolute;
+        top: 22%;
+        left: 50%;
+        width: 433px;
+        padding: 40px;
+        transform: translate(-50%, -50%);
+        /* background: rgba(24, 20, 20, 0.987); */
+        box-sizing: border-box;
+        /* box-shadow: 0 15px 25px rgba(0,0,0,.6); */
+        border-radius: 10px;
+    }
+    
+    .login-box .user-box {
+      position: relative;
+    }
+    
+    .login-box .user-box input {
+      width: 100%;
+      padding: 10px 0;
+      font-size: 16px;
+      color: #fff;
+      margin-bottom: 30px;
+      border: none;
+      border-bottom: 1px solid #fff;
+      outline: none;
+      background: transparent;
+    }
+    
+    .login-box .user-box label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 10px 0;
+      font-size: 16px;
+      color: #fff;
+      pointer-events: none;
+      transition: .5s;
+    }
+    
+    .login-box .user-box input:focus ~ label,
+    .login-box .user-box input:valid ~ label {
+      top: -20px;
+      left: 0;
+      color: #bdb8b8;
+      font-size: 12px;
+    }
+    
+    .login-box form a {
+      position: relative;
+      display: inline-block;
+      padding: 10px 20px;
+      color: #ffffff;
+      font-size: 16px;
+      text-decoration: none;
+      text-transform: uppercase;
+      overflow: hidden;
+      transition: .5s;
+      margin-top: 40px;
+      letter-spacing: 4px
+    }
+    
+    .login-box a:hover {
+      background: #03f40f;
+      color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #03f40f,
+                  0 0 25px #03f40f,
+                  0 0 50px #03f40f,
+                  0 0 100px #03f40f;
+    }
+    
+    .login-box a span {
+      position: absolute;
+      display: block;
+    }
+    
+    @keyframes btn-anim1 {
+      0% {
+        left: -100%;
+      }
+    
+      50%,100% {
+        left: 100%;
+      }
+    }
+    
+    .login-box a span:nth-child(1) {
+      bottom: 2px;
+      left: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #03f40f);
+      animation: btn-anim1 2s linear infinite;
+    }
+      /* *{
+        background-color: #03f40f;
+      }    */
+          
+            .card__form {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+           
+        </style>
+        <style>
+            body {
+              margin: 0;
+              padding: 0;
+              background-image: url("p2.jpg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center center;
+              font-family: "Raleway", sans-serif;
+            }
+      
+            .wrapper {
+                margin-top: 10%;
+              display: flex;
+              width: 100%;
+              height: auto;
+            }
+      
+            .left {
+              width: 100%;
+              padding: 20px;
+              margin-top: 60px;
+              box-sizing: border-box;
+              /* background-color: #fff9ef; */
+            }
+      
+            .container {
+              max-width: 400px;
+              margin: 20px auto;
+              padding: 20px;
+              padding-right: 40px;
+              box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+              border-radius: 8px;
+              background-color: rgba(255, 255, 255, 0.5);
+            }
+      
+            .form-group {
+              margin-bottom: 20px;
+            }
+      
+            label {
+              display: block;
+              margin-bottom: 5px;
+              font-weight: bold;
+            }
+      
+            input[type="text"],
+            input[type="email"],
+            input[type="password"] {
+              width: 100%;
+              padding: 10px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+            }
+      
+            /* #lbtn {
+              background-color: #b6540e;
+              color: white;
+              padding: 10px 20px;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              margin-left: 160px;
+            } */
+      
+            h2 {
+              margin-left: 160px;
+            }
+      
+            .login-with-google {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #fff;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              padding: 10px 50px;
+              cursor: pointer;
+              font-family: Arial, sans-serif;
+              margin: auto;
+              margin-top: 20px;
+            }
+      
+            .login-with-google img {
+              width: 20px;
+              height: 20px;
+              margin-right: 10px;
+            }
+      
+            .login-with-google span {
+              font-weight: bold;
+            }
+      
+            .signUp-section a {
+              color: #007bff;
+              text-decoration: none;
+              font-weight: bold;
+            }
+      
+            .signUp-section {
+              text-align: center;
+              margin-top: 20px;
+            }
+      
+            .signUp-section span {
+              font-size: 14px;
+            }
+      
+            a {
+              color: #0d6efd;
+              text-decoration: none;
+              -webkit-transition: all 0.3s ease-out 0s;
+              transition: all 0.3s ease-out 0s;
+              outline: medium none;
+              border-radius: 8px;
+            }
+      
+            a:hover {
+              color: #0a58ca;
+              outline: 0 none;
+            }
+      
+            .default-btn {
+              background: #b5876d none repeat scroll 0 0;
+              color: #ffffff;
+              font-family: "Raleway", sans-serif;
+              font-size: 14px;
+              font-weight: 700;
+              position: relative;
+              text-transform: uppercase;
+              transform: perspective(1px) translateZ(0px);
+              transition-duration: 0.2s;
+              transition-property: color;
+              vertical-align: middle;
+              display: inline-block;
+            }
+      
+            .default-btn:before {
+              background: rgba(255, 255, 255, 1);
+              bottom: 0;
+              content: "";
+              left: 0;
+              position: absolute;
+              right: 0;
+              top: 0;
+              transform: scaleY(0);
+              transform-origin: 50% 0 0;
+              transition-duration: 0.5s;
+              transition-property: transform;
+              transition-timing-function: ease-out;
+              z-index: -1;
+            }
+      
+            .default-btn:hover:before,
+            .default-btn:focus:before,
+            .default-btn:active:before {
+              transform: scaleY(1);
+              transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            }
+      
+            .default-btn:hover,
+            .default-btn:focus,
+            .default-btn:active {
+              color: #b5876d;
+            }
+      
+            .button {
+              overflow: hidden;
+              padding: 75px 0;
+            }
+      
+            .button > h1 {
+              color: #ffffff;
+              float: left;
+              font-size: 48px;
+              line-height: 48px;
+              text-transform: uppercase;
+            }
+      
+            .button span {
+              color: #b5876d;
+            }
+      
+            .button .default-btn {
+              line-height: 48px;
+              padding: 0 25px;
+              text-transform: uppercase;
+            }
+      
+            @media screen and (max-width: 480px) {
+              .container {
+                padding: 10px;
+                padding-right: 20px;
+              }
+      
+              h2 {
+                margin-left: 0;
+                text-align: center;
+              }
+      
+              .button {
+                padding: 60px 0;
+              }
+      
+              .button > h1 {
+                font-size: 32px;
+                line-height: 32px;
+              }
+            }
+          </style>
+              <style>
+                .login-box {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              width: 400px;
+              padding: 40px;
+              transform: translate(-50%, -50%);
+              background: rgba(24, 20, 20, 0.987);
+              box-sizing: border-box;
+              box-shadow: 0 15px 25px rgba(0,0,0,.6);
+              border-radius: 10px;
+            }
+            .login-boxm {
+                position: absolute;
+                top: 22%;
+                left: 50%;
+                width: 433px;
+                padding: 40px;
+                transform: translate(-50%, -50%);
+                /* background: rgba(24, 20, 20, 0.987); */
+                box-sizing: border-box;
+                /* box-shadow: 0 15px 25px rgba(0,0,0,.6); */
+                border-radius: 10px;
+            }
+            
+            .login-box .user-box {
+              position: relative;
+            }
+            
+            .login-box .user-box input {
+              width: 100%;
+              padding: 10px 0;
+              font-size: 16px;
+              color: #fff;
+              margin-bottom: 30px;
+              border: none;
+              border-bottom: 1px solid #fff;
+              outline: none;
+              background: transparent;
+            }
+            
+            .login-box .user-box label {
+              position: absolute;
+              top: 0;
+              left: 0;
+              padding: 10px 0;
+              font-size: 16px;
+              color: #fff;
+              pointer-events: none;
+              transition: .5s;
+            }
+            
+            .login-box .user-box input:focus ~ label,
+            .login-box .user-box input:valid ~ label {
+              top: -20px;
+              left: 0;
+              color: #bdb8b8;
+              font-size: 12px;
+            }
+            
+            .login-box form a {
+              position: relative;
+              display: inline-block;
+              padding: 10px 20px;
+              color: #ffffff;
+              font-size: 16px;
+              text-decoration: none;
+              text-transform: uppercase;
+              overflow: hidden;
+              transition: .5s;
+              margin-top: 40px;
+              letter-spacing: 4px
+            }
+            
+            .login-box a:hover {
+              background: #03f40f;
+              color: #fff;
+              border-radius: 5px;
+              box-shadow: 0 0 5px #03f40f,
+                          0 0 25px #03f40f,
+                          0 0 50px #03f40f,
+                          0 0 100px #03f40f;
+            }
+            
+            .login-box a span {
+              position: absolute;
+              display: block;
+            }
+            
+            @keyframes btn-anim1 {
+              0% {
+                left: -100%;
+              }
+            
+              50%,100% {
+                left: 100%;
+              }
+            }
+            
+            .login-box a span:nth-child(1) {
+              bottom: 2px;
+              left: -100%;
+              width: 100%;
+              height: 2px;
+              background: linear-gradient(90deg, transparent, #03f40f);
+              animation: btn-anim1 2s linear infinite;
+            }
+              /* *{
+                background-color: #03f40f;
+              }    */
+                  
+                    .card__form {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                    }
+                   
+                </style>
+                <style>
+                    /* Styles for desktop */
+                  
+                
+                    /* Styles for mobile */
+                    @media only screen and (max-width: 600px) {
+                        .login-box {
+                            width: 300px;
+                            padding: 20px;
+                        }
+                
+                        /* Additional mobile styles for login box or its elements */
+                    }
+                
+                    /* Styles for tablet */
+                    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+                        .login-box {
+                            width: 400px;
+                            padding: 30px;
+                        }
+                
+                        /* Additional tablet styles for login box or its elements */
+                    }
+                </style>
+                <style>
+            .navbar {
+              background-color: #f8f8f8;
+              padding: 10px;
+              display: flex;
+              /* justify-content: space-between; */
+              align-items: center;
+            }
+            /* 
+            ul{
+                float: left;
+            } */
+            
+            .navbar-brand a {
+              font-weight: bold;
+              color: #333;
+              text-decoration: none;
+            }
+            
+            .navbar-toggle-label {
+              display: none;
+              cursor: pointer;
+            }
+            
+            .navbar-toggle-label span {
+              display: block;
+              width: 25px;
+              height: 3px;
+              background-color: #333;
+              margin-bottom: 5px;
+            }
+            
+            .navbar-menu {
+              list-style: none;
+              display: flex;
+            }
+            
+            .navbar-menu li {
+              margin-right: 10px;
+            }
+            
+            .navbar-menu li a {
+              color: #333;
+              text-decoration: none;
+              padding: 5px;
+            }
+            
+                </style>
+        </head>
+        <body>
+
+            <header>
+                <nav class="navbar">
+                    <div class="navbar-brand">
+                      <a href="index.html">Readme Generator</a>
+                    </div>
+                   
+                    <ul class="navbar-menu">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Other Projects</a></li>
+                      <li><a href="https://monusingh.netlify.app/">Hire Me</a></li>
+                      <li><a href="">User</a></li>
+                      <!-- <li><a href="#">Contact</a></li> -->
+                    </ul>
+                  </nav>
+                  
+            </header>
+
+            <div class="login-boxm"> <h1>Best Readme Generator</h1></div>
+ 
+            <div class="wrapper">
+                <div class="left">
+                  <div class="container">
+                    <!-- Signup form content -->
+                 <button id="google"  class="login-with-google" id="goFast1">
+                      <img
+                        src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
+                        alt="Google Logo"
+                      />
+                      <span>Login with Google</span>
+                    </button>
+                    <button id="github" class="login-with-google" id="goFast1">
+                        <img
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb-ImDt1u4PQE9yvtImFO8Gttkzm8fVypBeQ&usqp=CAU"
+                          alt="Google Logo"
+                        />
+                        <span>Login with GitHub</span>
+                      </button>
+                  </div>
+                </div>
+              </div>
+      
+        </body>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+   
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-analytics.js";
+    import { getAuth, signInWithPopup, GoogleAuthProvider, GithubAuthProvider, signInWithPhoneNumber, RecaptchaVerifier} from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCPzHFHo6cxDYW7gu9aQAOxlRD5W3C9PiU",
+      authDomain: "github-readme-generator.firebaseapp.com",
+      projectId: "github-readme-generator",
+      storageBucket: "github-readme-generator.appspot.com",
+      messagingSenderId: "174732363213",
+      appId: "1:174732363213:web:39bb9793eb3c9fd5937084",
+      measurementId: "G-R6SB0CV2NX"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
+    const provider = new GoogleAuthProvider();
+// console.log(app)
+
+const auth = getAuth();
+
+document.getElementById("google").addEventListener("click",function(){
+
+// const auth = getAuth();
+signInWithPopup(auth, provider)
+  .then((result) => {
+    // This gives you a Google Access Token. You can use it to access the Google API.
+    const credential = GoogleAuthProvider.credentialFromResult(result);
+    const token = credential.accessToken;
+    // The signed-in user info.
+    const user = result.user;
+    // IdP data available using getAdditionalUserInfo(result)
+    // ...
+    localStorage.setItem("user",user.displayName)
+    localStorage.setItem("Auth","Monu Singh")
+    window.location.href = "index.html"; 
+  }).catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // The email of the user's account used.
+    const email = error.customData.email;
+    // The AuthCredential type that was used.
+    const credential = GoogleAuthProvider.credentialFromError(error);
+    // ...
+    // console.log(errorCode)
+    // console.log(errorMessage)
+    // console.log(email)
+  });
+})
+
+
+const provider1 = new GithubAuthProvider();
+// import { getAuth, signInWithPopup,} from "firebase/auth";
+
+document.getElementById("github").addEventListener("click",function(){
+// const auth = getAuth();
+signInWithPopup(auth, provider1)
+  .then((result) => {
+    // This gives you a GitHub Access Token. You can use it to access the GitHub API.
+    const credential = GithubAuthProvider.credentialFromResult(result);
+    const token = credential.accessToken;
+
+    // The signed-in user info.
+    const user = result.user;
+    // console.log(user)
+    // IdP data available using getAdditionalUserInfo(result)
+    // ...
+    console.log(user.displayName +"Hai")
+    localStorage.setItem("user",user.displayName)
+    localStorage.setItem("Auth","Monu Singh")
+    window.location.href = "index.html"; 
+  }).catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // The email of the user's account used.
+    const email = error.customData.email;
+    // The AuthCredential type that was used.
+    const credential = GithubAuthProvider.credentialFromError(error);
+    // ...
+  });
+})
+
+  </script>
+
+
+
+</html>
